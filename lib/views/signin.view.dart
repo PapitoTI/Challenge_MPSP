@@ -1,5 +1,5 @@
 import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/screens/anim/anim.controle.dart';
+import 'package:MPSP/screens/controller/anim.controle.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
