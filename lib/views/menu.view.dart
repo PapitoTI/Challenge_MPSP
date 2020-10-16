@@ -52,6 +52,13 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     });
   }
 
+  void onCloseMenuTap() {
+    setState(() {
+      _controller.reverse();
+    });
+    isCollapsed = !isCollapsed;
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -69,6 +76,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
                   menuAnimation: _menuAnimation,
                   slideAnimation: _slideAnimation,
                   bottonColor: findSelectedIndex(navigationState),
+                  onMenuCloseTap: onCloseMenuTap,
                 );
               },
             ),

@@ -7,9 +7,13 @@ class MenuController extends StatelessWidget {
   final Animation<double> menuAnimation;
   final Animation<Offset> slideAnimation;
   final int bottonColor;
-
+  final Function onMenuCloseTap;
   const MenuController(
-      {Key key, this.menuAnimation, this.slideAnimation, this.bottonColor})
+      {Key key,
+      this.menuAnimation,
+      this.slideAnimation,
+      this.bottonColor,
+      this.onMenuCloseTap})
       : super(key: key);
 
   @override
@@ -31,6 +35,7 @@ class MenuController extends StatelessWidget {
                     onTap: () {
                       BlocProvider.of<NavigationBloc>(context)
                           .add(NavigationEvents.InstitucionalClickedEvent);
+                      onMenuCloseTap();
                     },
                     child: Text(
                       "INSTITUCIONAL",
@@ -50,6 +55,7 @@ class MenuController extends StatelessWidget {
                     onTap: () {
                       BlocProvider.of<NavigationBloc>(context)
                           .add(NavigationEvents.AreaClickedEvent);
+                      onMenuCloseTap();
                     },
                     child: Text(
                       "ÁREAS DE ATUAÇÃO",
@@ -69,6 +75,7 @@ class MenuController extends StatelessWidget {
                     onTap: () {
                       BlocProvider.of<NavigationBloc>(context)
                           .add(NavigationEvents.CidadaoClickedEvent);
+                      onMenuCloseTap();
                     },
                     child: Text(
                       "CIDADÃO",
@@ -88,6 +95,7 @@ class MenuController extends StatelessWidget {
                     onTap: () {
                       BlocProvider.of<NavigationBloc>(context)
                           .add(NavigationEvents.ServicesClickedEvents);
+                      onMenuCloseTap();
                     },
                     child: Text(
                       "SERVIÇOS",

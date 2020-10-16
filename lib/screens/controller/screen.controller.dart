@@ -1,4 +1,3 @@
-import 'package:MPSP/config/pallet.dart';
 import 'package:flutter/material.dart';
 
 class ScreenController extends StatelessWidget {
