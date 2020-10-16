@@ -18,32 +18,56 @@ class Area extends StatelessWidget with NavigationStates {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.only(
-                top: 20), //para o oneaction tive que colocar
-
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                InkWell(
-                  child: Icon(
-                    Icons.menu,
-                    color: Palett.vermelhompsp,
-                  ),
-                  onTap: onMenuTap,
-                ),
-                Text(
-                  "Área de Atuação",
-                  style: TextStyle(fontSize: 24, color: Palett.vermelhompsp),
-                ),
-                Icon(
-                  Icons.chat,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              InkWell(
+                child: Icon(
+                  Icons.menu,
                   color: Palett.vermelhompsp,
+                ),
+                onTap: onMenuTap,
+              ),
+              Text(
+                "Área de Atuação",
+                style: TextStyle(fontSize: 24, color: Palett.vermelhompsp),
+              ),
+              Icon(
+                Icons.chat,
+                color: Palett.vermelhompsp,
+              ),
+            ],
+          ),
+          SizedBox(
+            height: 30,
+          ),
+          Container(
+            height: 500,
+            child: PageView(
+              controller: PageController(viewportFraction: 0.8),
+              scrollDirection: Axis.horizontal,
+              pageSnapping: true,
+              children: [
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 8),
+                  color: Palett.vermelhompsp,
+                  width: 100,
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 8),
+                  color: Palett.fiap,
+                  width: 100,
+                ),
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 8),
+                  color: Palett.azulmpsp,
+                  width: 100,
                 ),
               ],
             ),
           ),
+          SizedBox(height: 20),
         ],
       ),
     );
