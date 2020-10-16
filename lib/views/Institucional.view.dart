@@ -2,6 +2,8 @@ import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
 import 'package:MPSP/config/pallet.dart';
 import 'package:flutter/material.dart';
 
+///ListView.separated tem que trocar
+
 class Institucional extends StatelessWidget with NavigationStates {
   final Function onMenuTap;
 
@@ -10,7 +12,7 @@ class Institucional extends StatelessWidget with NavigationStates {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 16, right: 16, top: 48),
+      padding: const EdgeInsets.only(left: 16, right: 16, top: 60),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(40)),
         color: Palett.brancompsp,

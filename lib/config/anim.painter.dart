@@ -88,7 +88,7 @@ class BackgroundPainter extends CustomPainter {
       0,
       lerpDouble(0, size.height, redAnim.value),
     );
-    _PointsOfPath(path, [
+    _pointsOfPath(path, [
       Point(
         lerpDouble(0, size.width / 3, liquidAnim.value),
         lerpDouble(0, size.height, liquidAnim.value),
@@ -117,7 +117,7 @@ class BackgroundPainter extends CustomPainter {
       0,
       lerpDouble(size.height / 4, size.height / 2, red2Anim.value),
     );
-    _PointsOfPath(
+    _pointsOfPath(
       path,
       [
         Point(
@@ -148,7 +148,7 @@ class BackgroundPainter extends CustomPainter {
         0,
         lerpDouble(0, size.height / 12, whiteAnim.value),
       );
-      _PointsOfPath(path, [
+      _pointsOfPath(path, [
         Point(
           size.width / 7,
           lerpDouble(0, size.height / 6, liquidAnim.value),
@@ -178,7 +178,7 @@ class BackgroundPainter extends CustomPainter {
     return true;
   }
 
-  void _PointsOfPath(Path path, List<Point> points) {
+  void _pointsOfPath(Path path, List<Point> points) {
     if (points.length < 3) {
       throw UnsupportedError("Precisa de 2 pontos");
     }

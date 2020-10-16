@@ -1,6 +1,6 @@
 import 'package:MPSP/config/pallet.dart';
 import 'package:MPSP/screens/botons/sign.in.up.bottom.dart';
-import 'package:MPSP/views/menu.view.dart';
+import 'package:MPSP/screens/controller/menu.controle.dart';
 import 'package:MPSP/config/text_field.custom.dart';
 import 'package:flutter/material.dart';
 
