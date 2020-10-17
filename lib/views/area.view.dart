@@ -6,6 +6,7 @@ class Area extends StatelessWidget with NavigationStates {
   final Function onMenuTap;
 
   const Area({Key key, this.onMenuTap}) : super(key: key);
+  static const double boxSize = 130;
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +31,7 @@ class Area extends StatelessWidget with NavigationStates {
                 onTap: onMenuTap,
               ),
               Text(
-                "Área de Atuação",
+                "Áreas de Atuação",
                 style: TextStyle(fontSize: 24, color: Palett.vermelhompsp),
               ),
               Icon(
@@ -42,17 +43,134 @@ class Area extends StatelessWidget with NavigationStates {
           SizedBox(
             height: 30,
           ),
-          Container(
-            height: 500,
+          Flexible(
             child: PageView(
-              controller: PageController(viewportFraction: 0.8),
+              controller: PageController(viewportFraction: 0.9),
               scrollDirection: Axis.horizontal,
               pageSnapping: true,
               children: [
-                Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 8),
-                  color: Palett.vermelhompsp,
-                  width: 100,
+                SingleChildScrollView(
+                  child: Container(
+                    //alignment: Alignment.topCenter,
+                    margin: const EdgeInsets.symmetric(horizontal: 8),
+                    color: Palett.vermelhompsp,
+                    width: 100,
+                    child: Column(
+                      children: [
+                        Container(
+                          color: Colors.white,
+                        ),
+                        //SizedBox(height: 10),
+                        Container(
+                          alignment: Alignment.center,
+                          //color: Palett.azulmpsp,
+                          //width: 100,
+                          //height: 100,
+                          child: Text(
+                            "Cível",
+                            style:
+                                TextStyle(fontSize: 24, color: Palett.azulmpsp),
+                          ),
+                        ),
+                        SizedBox(height: 30),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                                color: Palett.azulmpsp,
+                              ),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 8),
