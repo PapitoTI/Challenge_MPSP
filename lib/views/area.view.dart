@@ -6,7 +6,7 @@ class Area extends StatelessWidget with NavigationStates {
   final Function onMenuTap;
 
   const Area({Key key, this.onMenuTap}) : super(key: key);
-  static const double boxSize = 130;
+  static const double boxSize = 80;
 
   @override
   Widget build(BuildContext context) {
@@ -78,19 +78,65 @@ class Area extends StatelessWidget with NavigationStates {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/img/atos.png'),
+                                  )),
                               width: boxSize,
                               height: boxSize,
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/img/destaques.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text(
+                              "Atos de Racionalização",
+                              style: TextStyle(
+                                  fontSize: 24, color: Palett.azulmpsp),
+                            ),
+                            Text(
+                              "Destaques",
+                              style: TextStyle(
+                                  fontSize: 24, color: Palett.azulmpsp),
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/img/falencias.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/img/familia.png'),
+                                  )),
                               width: boxSize,
                               height: boxSize,
                             ),
@@ -102,43 +148,23 @@ class Area extends StatelessWidget with NavigationStates {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/img/fundacoes.png'),
+                                  )),
                               width: boxSize,
                               height: boxSize,
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
-                              width: boxSize,
-                              height: boxSize,
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 15),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
-                              width: boxSize,
-                              height: boxSize,
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/img/mandados.png'),
+                                  )),
                               width: boxSize,
                               height: boxSize,
                             ),
@@ -150,19 +176,76 @@ class Area extends StatelessWidget with NavigationStates {
                           children: [
                             Container(
                               decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/img/processocivil.png'),
+                                  )),
                               width: boxSize,
                               height: boxSize,
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(20)),
-                                color: Palett.azulmpsp,
-                              ),
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/img/registrospublicos.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image:
+                                        AssetImage('assets/img/roteiros.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/img/acordos.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 15),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/img/dna.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: Palett.azulmpsp,
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/img/atos.png'),
+                                  )),
                               width: boxSize,
                               height: boxSize,
                             ),
