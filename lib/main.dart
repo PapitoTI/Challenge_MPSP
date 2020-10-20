@@ -1,4 +1,5 @@
 import 'package:MPSP/views/signin.view.dart';
+//import 'package:MPSP/screens/botons/chathade.bottom.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: SigninView(),
+
+      ///home: ChatHade(),
     );
   }
 }

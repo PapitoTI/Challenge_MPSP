@@ -1,5 +1,6 @@
 import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
 import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/screens/botons/chathade.bottom.dart';
 import 'package:flutter/material.dart';
 
 ///ListView.separated tem que trocar
@@ -48,7 +49,7 @@ class Institucional extends StatelessWidget with NavigationStates {
               height: 30,
             ),
             Container(
-              height: 200,
+              height: 600,
               child: PageView(
                 controller: PageController(viewportFraction: 0.8),
                 scrollDirection: Axis.horizontal,
