@@ -79,6 +79,14 @@ class Area extends StatelessWidget with NavigationStates {
                             Container(
                               decoration: BoxDecoration(
                                   shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.5),
+                                      spreadRadius: 0.5,
+                                      blurRadius: 10,
+                                      offset: Offset(0, 5),
+                                    )
+                                  ],
                                   color: Palett.azulmpsp,
                                   image: DecorationImage(
                                     image: AssetImage('assets/img/atos.png'),
@@ -101,45 +109,22 @@ class Area extends StatelessWidget with NavigationStates {
                         ),
                         SizedBox(height: 5),
                         Container(
-                          //alignment: Alignment.center,
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 10.0),
-                                child: Flexible(
-                                    child: Text(("Atos de Racionalização"))),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 10.0),
-                                child: Flexible(child: Text(("Destaques"))),
-                              ),
+                              Flexible(
+                                  child: Text(
+                                "Atos de Racionalização",
+                                textAlign: TextAlign.center,
+                              )),
+                              Flexible(
+                                  child: Text(
+                                "Destaques             ",
+                                textAlign: TextAlign.center,
+                              )),
                             ],
                           ),
                         ),
-                        // Row(
-                        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        //   children: [
-                        //     Container(
-                        //       alignment: Alignment.center,
-                        //       width: 150,
-                        //       child: Text("Atos de Racionalização",
-                        //           style: TextStyle(
-                        //               fontSize: 16, color: Palett.azulmpsp),
-                        //           overflow: TextOverflow.ellipsis,
-                        //           maxLines: 2),
-                        //     ),
-                        //     Container(
-                        //       alignment: Alignment.center,
-                        //       width: 120,
-                        //       child: Text("Destaques",
-                        //           style: TextStyle(
-                        //               fontSize: 16, color: Palett.azulmpsp),
-                        //           overflow: TextOverflow.ellipsis,
-                        //           maxLines: 1),
-                        //     ),
-                        //   ],
-                        // ),
                         SizedBox(height: 15),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -166,6 +151,24 @@ class Area extends StatelessWidget with NavigationStates {
                               height: boxSize,
                             ),
                           ],
+                        ),
+                        SizedBox(height: 5),
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Flexible(
+                                  child: Text(
+                                "Falências             ",
+                                textAlign: TextAlign.center,
+                              )),
+                              Flexible(
+                                  child: Text(
+                                "Família               ",
+                                textAlign: TextAlign.center,
+                              )),
+                            ],
+                          ),
                         ),
                         SizedBox(height: 15),
                         Row(
@@ -195,6 +198,24 @@ class Area extends StatelessWidget with NavigationStates {
                             ),
                           ],
                         ),
+                        SizedBox(height: 5),
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Flexible(
+                                  child: Text(
+                                "Fundações              ",
+                                textAlign: TextAlign.center,
+                              )),
+                              Flexible(
+                                  child: Text(
+                                "Mandados               de Segurança",
+                                textAlign: TextAlign.center,
+                              )),
+                            ],
+                          ),
+                        ),
                         SizedBox(height: 15),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -223,6 +244,24 @@ class Area extends StatelessWidget with NavigationStates {
                             ),
                           ],
                         ),
+                        SizedBox(height: 5),
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Flexible(
+                                  child: Text(
+                                "Processo Civil             ",
+                                textAlign: TextAlign.center,
+                              )),
+                              Flexible(
+                                  child: Text(
+                                "Registros Públicos             ",
+                                textAlign: TextAlign.center,
+                              )),
+                            ],
+                          ),
+                        ),
                         SizedBox(height: 15),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -250,6 +289,24 @@ class Area extends StatelessWidget with NavigationStates {
                             ),
                           ],
                         ),
+                        SizedBox(height: 5),
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Flexible(
+                                  child: Text(
+                                "Roteiros             ",
+                                textAlign: TextAlign.center,
+                              )),
+                              Flexible(
+                                  child: Text(
+                                "Termos               de Cooperação",
+                                textAlign: TextAlign.center,
+                              )),
+                            ],
+                          ),
+                        ),
                         SizedBox(height: 15),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -275,6 +332,24 @@ class Area extends StatelessWidget with NavigationStates {
                               height: boxSize,
                             ),
                           ],
+                        ),
+                        SizedBox(height: 5),
+                        Container(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Flexible(
+                                  child: Text(
+                                "Agendamento          de Exames de DNA",
+                                textAlign: TextAlign.center,
+                              )),
+                              Flexible(
+                                  child: Text(
+                                "Destaques             ",
+                                textAlign: TextAlign.center,
+                              )),
+                            ],
+                          ),
                         ),
                       ],
                     ),
