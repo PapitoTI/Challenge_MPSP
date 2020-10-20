@@ -99,22 +99,47 @@ class Area extends StatelessWidget with NavigationStates {
                             ),
                           ],
                         ),
-                        SizedBox(height: 15),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              "Atos de Racionalização",
-                              style: TextStyle(
-                                  fontSize: 24, color: Palett.azulmpsp),
-                            ),
-                            Text(
-                              "Destaques",
-                              style: TextStyle(
-                                  fontSize: 24, color: Palett.azulmpsp),
-                            ),
-                          ],
+                        SizedBox(height: 5),
+                        Container(
+                          //alignment: Alignment.center,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(left: 10.0),
+                                child: Flexible(
+                                    child: Text(("Atos de Racionalização"))),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 10.0),
+                                child: Flexible(child: Text(("Destaques"))),
+                              ),
+                            ],
+                          ),
                         ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        //   children: [
+                        //     Container(
+                        //       alignment: Alignment.center,
+                        //       width: 150,
+                        //       child: Text("Atos de Racionalização",
+                        //           style: TextStyle(
+                        //               fontSize: 16, color: Palett.azulmpsp),
+                        //           overflow: TextOverflow.ellipsis,
+                        //           maxLines: 2),
+                        //     ),
+                        //     Container(
+                        //       alignment: Alignment.center,
+                        //       width: 120,
+                        //       child: Text("Destaques",
+                        //           style: TextStyle(
+                        //               fontSize: 16, color: Palett.azulmpsp),
+                        //           overflow: TextOverflow.ellipsis,
+                        //           maxLines: 1),
+                        //     ),
+                        //   ],
+                        // ),
                         SizedBox(height: 15),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
