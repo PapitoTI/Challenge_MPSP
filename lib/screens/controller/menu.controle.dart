@@ -47,7 +47,6 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
         _controller.forward();
       else
         _controller.reverse();
-
       isCollapsed = !isCollapsed;
     });
   }
