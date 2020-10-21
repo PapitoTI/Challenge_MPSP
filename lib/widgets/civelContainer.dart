@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:MPSP/config/pallet.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class IconContainer extends StatelessWidget {
-  static const double boxSize = 80;
+  static const double boxSize = 70;
 
-  IconContainer(String img, String link);
+  IconContainer(this.img, this.link);
+
+  final String img;
+  final String link;
 
   @override
   Widget build(BuildContext context) {
-    var img;
-    var link;
     return GestureDetector(
       onTap: () => launch("$link"),
       child: Container(
@@ -24,7 +24,7 @@ class IconContainer extends StatelessWidget {
                 offset: Offset(0, 5),
               )
             ],
-            color: Palett.azulmpsp,
+            //color: Palett.azulmpsp,
             image: DecorationImage(
               image: AssetImage('$img'),
             )),
@@ -36,8 +36,15 @@ class IconContainer extends StatelessWidget {
 }
 
 class IconTitle extends StatelessWidget {
+  IconTitle(this.title);
+  final String title;
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Flexible(
+        child: Text(
+      "$title",
+      textAlign: TextAlign.center,
+    ));
   }
 }
