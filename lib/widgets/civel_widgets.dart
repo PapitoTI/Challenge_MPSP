@@ -71,7 +71,7 @@ class CivelPage extends StatelessWidget {
             Container(
               color: Colors.white,
             ),
-            //SizedBox(height: 10),
+            SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               //color: Palett.azulmpsp,
