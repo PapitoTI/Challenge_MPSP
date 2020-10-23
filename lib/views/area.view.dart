@@ -17,56 +17,83 @@ class Area extends StatelessWidget with NavigationStates {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            TopContainer(
-              height: 80,
-              width: width,
-              child: Padding(
-                padding: const EdgeInsets.only(top: 25),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        InkWell(
-                          child: Icon(
-                            Icons.menu,
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        body: SafeArea(
+          child: Column(
+            children: [
+              TopContainer(
+                height: 80,
+                width: width,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 25),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          InkWell(
+                            child: Icon(
+                              Icons.menu,
+                              color: Palett.brancompsp,
+                            ),
+                            onTap: onMenuTap,
+                          ),
+                          Text(
+                            "Áreas de Atuação",
+                            style: TextStyle(
+                                fontSize: 24, color: Palett.brancompsp),
+                          ),
+                          Icon(
+                            Icons.chat,
                             color: Palett.brancompsp,
                           ),
-                          onTap: onMenuTap,
-                        ),
-                        Text(
-                          "Áreas de Atuação",
-                          style:
-                              TextStyle(fontSize: 24, color: Palett.brancompsp),
-                        ),
-                        Icon(
-                          Icons.chat,
-                          color: Palett.brancompsp,
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 30,
-                    ),
-                  ],
+                        ],
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-            Flexible(
-              child: PageView(
-                controller: PageController(viewportFraction: 0.90),
-                scrollDirection: Axis.horizontal,
-                pageSnapping: true,
-                children: [CivelPage(), ConsumidorPage(), CriminalPage()],
+              Container(
+                color: Palett.vermelhompsp,
+                child: TabBar(
+                    labelColor: Palett.vermelhompsp2,
+                    unselectedLabelColor: Palett.brancompsp,
+                    indicatorSize: TabBarIndicatorSize.tab,
+                    indicator: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10),
+                          topRight: Radius.circular(10),
+                        ),
+                        color: Palett.brancompsp),
+                    tabs: [
+                      Tab(
+                        icon: Icon(Icons.account_circle),
+                        text: 'Cível',
+                      ),
+                      Tab(
+                        icon: Icon(Icons.account_circle),
+                        text: 'Consumidor',
+                      ),
+                      Tab(
+                        icon: Icon(Icons.account_circle),
+                        text: 'Criminal',
+                      ),
+                    ]),
               ),
-            ),
-          ],
+              Flexible(
+                child: TabBarView(
+                  children: [CivelPage(), ConsumidorPage(), CriminalPage()],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
