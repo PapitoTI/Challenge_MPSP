@@ -8,7 +8,7 @@ class ChatHade extends StatefulWidget {
 class _ChatHadeState extends State<ChatHade> {
   final GlobalKey _bottomKey = GlobalKey();
   Size bottomSize;
-  Offset bottomLocation = Offset(0, 100);
+  Offset bottomLocation = Offset(0, 400);
 
   void getBottomSize() {
     RenderBox _bottomBox = _bottomKey.currentContext.findRenderObject();
