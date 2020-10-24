@@ -23,7 +23,9 @@ class Area extends StatelessWidget with NavigationStates {
         body: SafeArea(
           child: Column(
             children: [
-              TopContainer(
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                color: Palett.vermelhompsp2,
                 height: 80,
                 width: width,
                 child: Padding(
@@ -45,7 +47,9 @@ class Area extends StatelessWidget with NavigationStates {
                           Text(
                             "Áreas de Atuação",
                             style: TextStyle(
-                                fontSize: 24, color: Palett.brancompsp),
+                                fontSize: 24,
+                                color: Palett.brancompsp,
+                                fontFamily: "Roboto"),
                           ),
                           Icon(
                             Icons.chat,
@@ -53,23 +57,20 @@ class Area extends StatelessWidget with NavigationStates {
                           ),
                         ],
                       ),
-                      SizedBox(
-                        height: 30,
-                      ),
                     ],
                   ),
                 ),
               ),
               Container(
-                color: Palett.vermelhompsp,
+                color: Palett.vermelhompsp2,
                 child: TabBar(
                     labelColor: Palett.vermelhompsp2,
                     unselectedLabelColor: Palett.brancompsp,
                     indicatorSize: TabBarIndicatorSize.tab,
                     indicator: BoxDecoration(
                         borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(10),
-                          topRight: Radius.circular(10),
+                          topLeft: Radius.circular(30),
+                          topRight: Radius.circular(30),
                         ),
                         color: Palett.brancompsp),
                     tabs: [

@@ -57,14 +57,29 @@ class CriminalPage extends StatelessWidget {
               color: Colors.white,
             ),
             SizedBox(height: 20),
-            Container(
-              alignment: Alignment.center,
-              //color: Palett.vermelhompsp,
-              //width: 100,
-              //height: 100,
-              child: Text(
-                "Criminal",
-                style: TextStyle(fontSize: 22, color: Palett.azulmpsp),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 60,
+                right: 60,
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                //color: Palett.azulmpsp,
+                //width: 100,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Palett.azulmpsp,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  child: Text(
+                    "Clique na área de interesse para ser redirecionado.",
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white,
+                        fontFamily: "Roboto"),
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 30),

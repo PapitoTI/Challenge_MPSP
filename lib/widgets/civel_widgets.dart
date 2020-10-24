@@ -47,7 +47,7 @@ class CivelIconTitle extends StatelessWidget {
     return Flexible(
         child: Text(
       "$title",
-      //style: TextStyle(fontFamily: "Roboto", fontSize: 16.5),
+      style: TextStyle(fontFamily: "Roboto", fontSize: 14),
       textAlign: TextAlign.center,
     ));
   }
@@ -72,14 +72,29 @@ class CivelPage extends StatelessWidget {
               color: Colors.white,
             ),
             SizedBox(height: 20),
-            Container(
-              alignment: Alignment.center,
-              //color: Palett.azulmpsp,
-              //width: 100,
-              //height: 100,
-              child: Text(
-                "Cível",
-                style: TextStyle(fontSize: 22, color: Palett.azulmpsp),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 60,
+                right: 60,
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                //color: Palett.azulmpsp,
+                //width: 100,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: Palett.azulmpsp,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 40),
+                  child: Text(
+                    "Clique na área de interesse para ser redirecionado.",
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white,
+                        fontFamily: "Roboto"),
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 30),
@@ -97,8 +112,9 @@ class CivelPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CivelIconTitle("Atos de Racionalização"),
-                  CivelIconTitle("Destaques              "),
+                  CivelIconTitle("Atos de Racionalização                   "),
+                  CivelIconTitle(
+                      "Destaques                                         "),
                 ],
               ),
             ),
