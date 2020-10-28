@@ -86,7 +86,7 @@ class CriminalPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                CriminalIconContainer('assets/img/area_criminal/1.jpg',
+                CriminalIconContainer('assets/img/area_criminal/1.png',
                     "https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eoyzwst8bdVCnQElp_DrXPUBV6ZX1mgVkdnjhpfq3Xa4xw?e=QS6MaB"),
                 CriminalIconContainer('assets/img/area_criminal/2.jpg',
                     'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eh5GSqxq4oJIgqVCbBUThC0BSegNiOFzR2_AKqukvvbt4g?e=7GZ1ja'),

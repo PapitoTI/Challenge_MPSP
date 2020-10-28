@@ -42,6 +42,7 @@ flutter:
     - assets/img/area_civel/
     - assets/img/area_consumidor/
     - assets/img/area_criminal/
+    - assets/img/cidadao_cartilhas/
   fonts:
     - family: Roboto
       fonts:

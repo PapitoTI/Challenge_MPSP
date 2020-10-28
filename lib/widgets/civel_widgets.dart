@@ -133,8 +133,10 @@ class CivelPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CivelIconTitle("Falências              "),
-                  CivelIconTitle("Família                "),
+                  CivelIconTitle(
+                      "Falências                                             "),
+                  CivelIconTitle(
+                      "Família                                                 "),
                 ],
               ),
             ),
@@ -153,8 +155,10 @@ class CivelPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CivelIconTitle("Fundações                "),
-                  CivelIconTitle("Mandados                  de Segurança"),
+                  CivelIconTitle(
+                      "Fundações                                       "),
+                  CivelIconTitle(
+                      "Mandados                                          de Segurança"),
                 ],
               ),
             ),
@@ -174,8 +178,10 @@ class CivelPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CivelIconTitle("Processo Civil               "),
-                  CivelIconTitle("Registros Públicos            "),
+                  CivelIconTitle(
+                      "Processo Civil                                  "),
+                  CivelIconTitle(
+                      "Registros Públicos                                "),
                 ],
               ),
             ),
@@ -194,8 +200,10 @@ class CivelPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CivelIconTitle("Roteiros               "),
-                  CivelIconTitle("Termos                de Cooperação"),
+                  CivelIconTitle(
+                      "Roteiros                                                  "),
+                  CivelIconTitle(
+                      "Termos                                                de Cooperação"),
                 ],
               ),
             ),
@@ -220,7 +228,7 @@ class CivelPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CivelIconTitle(
-                      "Agendamento                   de exames de DNA"),
+                      "Agendamento                                                    de exames de DNA"),
                   Flexible(
                       child: Text(
                     "",

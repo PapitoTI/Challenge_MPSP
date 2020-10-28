@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ConsumidorIconContainer extends StatelessWidget {
-  static const double boxSize = 180;
+  static const double boxSize = 70;
 
   ConsumidorIconContainer(this.img, this.link);
 
@@ -18,7 +18,7 @@ class ConsumidorIconContainer extends StatelessWidget {
       onTap: () => launch("$link"),
       child: Container(
         decoration: BoxDecoration(
-            shape: BoxShape.rectangle,
+            shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.5),
@@ -35,6 +35,21 @@ class ConsumidorIconContainer extends StatelessWidget {
         height: boxSize,
       ),
     );
+  }
+}
+
+class ConsumidorIconTitle extends StatelessWidget {
+  ConsumidorIconTitle(this.title);
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Flexible(
+        child: Text(
+      "$title",
+      style: TextStyle(fontFamily: "Roboto", fontSize: 14),
+      textAlign: TextAlign.center,
+    ));
   }
 }
 
@@ -87,63 +102,73 @@ class ConsumidorPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ConsumidorIconContainer(
-                    "assets/img/area_consumidor/00-01-ConflitosAtivo34.png",
-                    "https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eoyzwst8bdVCnQElp_DrXPUBV6ZX1mgVkdnjhpfq3Xa4xw?e=QS6MaB"),
+                    'assets/img/area_consumidor/00-01-ConflitosAtivo34_cropped.png',
+                    'https://mpspbr.sharepoint.com/:f:/s/g_caoconsumidor/Es92EkeFvyFEpQRKJqAojv0BnYOFHPUv8rLo39vxqz27-Q?e=QKNcbP'),
                 ConsumidorIconContainer(
-                    'assets/img/area_consumidor/00-02-ConsumidorAtivo35.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eh5GSqxq4oJIgqVCbBUThC0BSegNiOFzR2_AKqukvvbt4g?e=7GZ1ja')
+                    'assets/img/area_consumidor/00-02-ConsumidorAtivo35_cropped.png',
+                    'https://consumidorvencedor.mp.br/')
               ],
+            ),
+            SizedBox(height: spaceIconToTitle),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ConsumidorIconTitle(
+                      "Conflitos de Atribuição                                            "),
+                  ConsumidorIconTitle(
+                      "Consumidor Vencedor                                 "),
+                ],
+              ),
             ),
             SizedBox(height: spaceTitleToIcon),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ConsumidorIconContainer(
-                    'assets/img/area_consumidor/00-03-materialAtivo36.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eony4SkBR_BBpd5dpGj1Y_gBL_B4hXpJy4zcn7-O6JstWg?e=GSc4cy'),
+                    'assets/img/area_consumidor/00-03-materialAtivo36_cropped.png',
+                    'http://www.mpsp.mp.br/portal/page/portal/cao_consumidor/materialapoio'),
                 ConsumidorIconContainer(
-                    'assets/img/area_consumidor/00-04-RecursoAtivo37.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eu-S_WjOk7hIoFfE9dwQ4ysBUqnewaqRuHQNLvSK8Xy9AA?e=vOgxwn'),
+                    'assets/img/area_consumidor/martelo_cropped.png',
+                    'https://mpspbr.sharepoint.com/:f:/s/g_caoconsumidor/Eox0JELnneNEtQRI4hiyFhkBPbWuAexW6pIxdiSTad_tdw?e=bQBC95'),
               ],
+            ),
+            SizedBox(height: spaceIconToTitle),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ConsumidorIconTitle(
+                      "Material de Apoio                            "),
+                  ConsumidorIconTitle(
+                      "Recurso Repetitivo                                               Repercussão Geral                                               IRDR"),
+                ],
+              ),
             ),
             SizedBox(height: spaceTitleToIcon),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 ConsumidorIconContainer(
-                    'assets/img/area_consumidor/00-05- RoteirosAtivo38.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/EsWz3udkDPRJu12TcO2PeG0BE6-_RK32VO1-GM8BQIle7Q?e=2sIPWc'),
+                    'assets/img/area_consumidor/00-05- RoteirosAtivo38_cropped.png',
+                    'https://mpspbr.sharepoint.com/:f:/s/g_caoconsumidor/Eidh9fyulR9FiibhSh1Bl3YBYNFvgm3kVjE9iTdg69_noQ?e=Gx33tt'),
+                ConsumidorIconContainer('assets/img/area_consumidor/acervo.png',
+                    'http://www.mpsp.mp.br/portal/page/portal/cao_consumidor/acervo'),
               ],
+            ),
+            SizedBox(height: spaceIconToTitle),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ConsumidorIconTitle(
+                      "Roteiros                                                                                               "),
+                  ConsumidorIconTitle(
+                      "Acervo                                                            "),
+                ],
+              ),
             ),
             SizedBox(height: spaceTitleToIcon),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                GestureDetector(
-                  onTap: () => launch(
-                      "http://www.mpsp.mp.br/portal/page/portal/cao_consumidor/acervo"),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        shape: BoxShape.rectangle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
-                            spreadRadius: 0.5,
-                            blurRadius: 10,
-                            offset: Offset(0, 5),
-                          )
-                        ],
-                        //color: Palett.azulmpsp,
-                        image: DecorationImage(
-                          image: AssetImage(
-                              'assets/img/area_consumidor/00-06-AcervoAtivo39.png'),
-                        )),
-                    width: 107,
-                    height: boxSize,
-                  ),
-                )
-              ],
-            ),
           ],
         ),
       ),
