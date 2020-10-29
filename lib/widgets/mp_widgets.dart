@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -75,7 +75,7 @@ class MPPage extends StatelessWidget {
                   fontFamily: "Roboto",
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
-                  color: Palett.vermelhompsp2,
+                  color: Palette.vermelhompsp2,
                 ),
               ),
             ),
@@ -87,11 +87,11 @@ class MPPage extends StatelessWidget {
               ),
               child: Container(
                 alignment: Alignment.center,
-                //color: Palett.azulmpsp,
+                //color: Palette.azulmpsp,
                 width: MediaQuery.of(context).size.width * 1.0,
                 //height: 50,
                 decoration: BoxDecoration(
-                    color: Palett.azulmpsp,
+                    color: Palette.azulmpsp,
                     borderRadius: BorderRadius.circular(20)),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40),

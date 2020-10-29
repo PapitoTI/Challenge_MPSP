@@ -1,8 +1,8 @@
-import 'package:MPSP/views/area.view.dart';
-import 'package:MPSP/views/cidadao.view.dart';
-import 'package:MPSP/views/services.view.dart';
+import 'package:MPSP/views/area_view.dart';
+import 'package:MPSP/views/cidadao_view.dart';
+import 'package:MPSP/views/services_view.dart';
 import 'package:bloc/bloc.dart';
-import 'package:MPSP/views/Institucional.view.dart';
+import 'package:MPSP/views/institucional_view.dart';
 
 enum NavigationEvents {
   InstitucionalClickedEvent,

@@ -1,11 +1,11 @@
-import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
-import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/screens/controller/screen.controller.dart';
-import 'package:MPSP/views/Institucional.view.dart';
-import 'package:MPSP/views/area.view.dart';
-import 'package:MPSP/views/cidadao.view.dart';
-import 'package:MPSP/views/menu.view.dart';
-import 'package:MPSP/views/services.view.dart';
+import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
+import 'package:MPSP/config/palette.dart';
+import 'package:MPSP/screens/controller/screen_controller.dart';
+import 'package:MPSP/views/institucional_view.dart';
+import 'package:MPSP/views/area_view.dart';
+import 'package:MPSP/views/cidadao_view.dart';
+import 'package:MPSP/views/menu_view.dart';
+import 'package:MPSP/views/services_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -64,7 +64,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     screenHeight = size.height;
     screenWidth = size.width;
     return Scaffold(
-      backgroundColor: Palett.vermelhompsp,
+      backgroundColor: Palette.vermelhompsp,
       body: BlocProvider<NavigationBloc>(
         create: (context) => NavigationBloc(onMenuTap: onMenuTap),
         child: Stack(

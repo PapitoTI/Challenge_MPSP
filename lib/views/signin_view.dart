@@ -1,5 +1,5 @@
-import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/screens/controller/anim.controle.dart';
+import 'package:MPSP/config/palette.dart';
+import 'package:MPSP/screens/controller/anim_controle.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,10 +18,10 @@ class _SigninViewState extends State<SigninView> {
         textTheme: GoogleFonts.anonymousProTextTheme(),
 
         /// escolherfont essa esta riducula
-        accentColor: Palett.brancompsp,
+        accentColor: Palette.brancompsp,
         appBarTheme: const AppBarTheme(
           brightness: Brightness.dark,
-          color: Palett.fiap,
+          color: Palette.fiap,
         ),
       ),
       home: ControleScreen(),

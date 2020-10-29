@@ -1,7 +1,7 @@
-import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
-import 'package:MPSP/config/card.custom.dart';
-import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/screens/botons/chathade.bottom.dart';
+import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
+import 'package:MPSP/config/card_custom.dart';
+import 'package:MPSP/config/palette.dart';
+import 'package:MPSP/screens/buttons/chathead.button.dart';
 import 'package:flutter/material.dart';
 
 class Services extends StatelessWidget with NavigationStates {
@@ -31,7 +31,7 @@ class Services extends StatelessWidget with NavigationStates {
                       padding: const EdgeInsets.only(right: 100),
                       child: Icon(
                         Icons.menu,
-                        color: Palett.vermelhompsp,
+                        color: Palette.vermelhompsp,
                       ),
                     ),
                     onTap: onMenuTap,
@@ -41,7 +41,7 @@ class Services extends StatelessWidget with NavigationStates {
                     child: Text(
                       "Serviços",
                       style:
-                          TextStyle(fontSize: 24, color: Palett.vermelhompsp),
+                          TextStyle(fontSize: 24, color: Palette.vermelhompsp),
                     ),
                   ),
                 ],
@@ -56,13 +56,13 @@ class Services extends StatelessWidget with NavigationStates {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(_borderRadius),
                         gradient: LinearGradient(
-                          colors: [Palett.vermelhompsp, Palett.vermelhompsp2],
+                          colors: [Palette.vermelhompsp, Palette.vermelhompsp2],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Palett.vermelhompsp2,
+                            color: Palette.vermelhompsp2,
                             blurRadius: 5,
                             offset: Offset(0, 2),
                           ),
@@ -76,7 +76,7 @@ class Services extends StatelessWidget with NavigationStates {
                     child: CustomPaint(
                       size: Size(100, 150),
                       painter: CustomCardShapePainter(_borderRadius,
-                          Palett.vermelhompsp, Palett.vermelhompsp2),
+                          Palette.vermelhompsp, Palette.vermelhompsp2),
                     ),
                   ),
                   Padding(
@@ -96,7 +96,7 @@ class Services extends StatelessWidget with NavigationStates {
                               Text(
                                 'Atendimento ao \nInativo',
                                 style: TextStyle(
-                                    color: Palett.brancompsp, fontSize: 22),
+                                    color: Palette.brancompsp, fontSize: 22),
                               ),
                             ],
                           ),
@@ -107,13 +107,13 @@ class Services extends StatelessWidget with NavigationStates {
                             children: [
                               Icon(
                                 Icons.email,
-                                color: Palett.brancompsp,
+                                color: Palette.brancompsp,
                                 size: 50,
                               ),
                               Text(
                                 'Email',
                                 style: TextStyle(
-                                    color: Palett.brancompsp, fontSize: 12),
+                                    color: Palette.brancompsp, fontSize: 12),
                               ),
                             ],
                           ),
@@ -133,13 +133,13 @@ class Services extends StatelessWidget with NavigationStates {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(_borderRadius),
                         gradient: LinearGradient(
-                          colors: [Palett.azulmpsp, Colors.indigo[700]],
+                          colors: [Palette.azulmpsp, Colors.indigo[700]],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight,
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: Palett.azulmpsp,
+                            color: Palette.azulmpsp,
                             blurRadius: 5,
                             offset: Offset(0, 2),
                           ),
@@ -153,7 +153,7 @@ class Services extends StatelessWidget with NavigationStates {
                     child: CustomPaint(
                       size: Size(100, 150),
                       painter: CustomCardShapePainter(
-                          _borderRadius, Palett.azulmpsp, Colors.indigo[700]),
+                          _borderRadius, Palette.azulmpsp, Colors.indigo[700]),
                     ),
                   ),
                   Padding(
@@ -173,7 +173,7 @@ class Services extends StatelessWidget with NavigationStates {
                               Text(
                                 'Diário Oficial',
                                 style: TextStyle(
-                                    color: Palett.brancompsp, fontSize: 22),
+                                    color: Palette.brancompsp, fontSize: 22),
                               ),
                             ],
                           ),
@@ -184,13 +184,13 @@ class Services extends StatelessWidget with NavigationStates {
                             children: [
                               Icon(
                                 Icons.article,
-                                color: Palett.brancompsp,
+                                color: Palette.brancompsp,
                                 size: 50,
                               ),
                               Text(
                                 'Diário',
                                 style: TextStyle(
-                                    color: Palett.brancompsp, fontSize: 12),
+                                    color: Palette.brancompsp, fontSize: 12),
                               ),
                             ],
                           ),
@@ -250,7 +250,7 @@ class Services extends StatelessWidget with NavigationStates {
                               Text(
                                 'Gestão\nDocumental',
                                 style: TextStyle(
-                                    color: Palett.brancompsp, fontSize: 22),
+                                    color: Palette.brancompsp, fontSize: 22),
                               ),
                             ],
                           ),
@@ -261,13 +261,13 @@ class Services extends StatelessWidget with NavigationStates {
                             children: [
                               Icon(
                                 Icons.article,
-                                color: Palett.brancompsp,
+                                color: Palette.brancompsp,
                                 size: 50,
                               ),
                               Text(
                                 'FAQ',
                                 style: TextStyle(
-                                    color: Palett.brancompsp, fontSize: 12),
+                                    color: Palette.brancompsp, fontSize: 12),
                               ),
                             ],
                           ),
@@ -280,7 +280,7 @@ class Services extends StatelessWidget with NavigationStates {
             ],
           ),
         ),
-        ChatHade()
+        ChatHead()
       ],
     );
   }

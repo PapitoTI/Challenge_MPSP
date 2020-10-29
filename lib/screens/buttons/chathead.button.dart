@@ -1,12 +1,12 @@
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 
-class ChatHade extends StatefulWidget {
+class ChatHead extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _ChatHadeState();
+  State<StatefulWidget> createState() => _ChatHeadState();
 }
 
-class _ChatHadeState extends State<ChatHade> with TickerProviderStateMixin {
+class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   final GlobalKey _bottomKey = GlobalKey();
   bool isOpened = false;
   AnimationController _animationController;
@@ -77,8 +77,8 @@ class _ChatHadeState extends State<ChatHade> with TickerProviderStateMixin {
     _animationIcon =
         Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
     _buttonColor =
-        ColorTween(begin: Palett.vermelhompsp, end: Palett.brancompsp).animate(
-            CurvedAnimation(
+        ColorTween(begin: Palette.vermelhompsp, end: Palette.brancompsp)
+            .animate(CurvedAnimation(
                 parent: _animationController,
                 curve: Interval(0.00, 1.00, curve: Curves.linear)));
     _translateButton = Tween<double>(begin: _fabHeight, end: -14.0).animate(
@@ -112,7 +112,7 @@ class _ChatHadeState extends State<ChatHade> with TickerProviderStateMixin {
 
   Widget buttonFAQ() {
     return FloatingActionButton(
-      backgroundColor: Palett.vermelhompsp,
+      backgroundColor: Palette.vermelhompsp,
       foregroundColor: Colors.black,
       heroTag: "btn3",
       onPressed: () {},

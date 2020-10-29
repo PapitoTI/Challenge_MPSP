@@ -1,6 +1,6 @@
-import 'package:MPSP/config/anim.painter.dart';
-import 'package:MPSP/forms/signin.form.dart';
-import 'package:MPSP/forms/signup.form.dart';
+import 'package:MPSP/config/anim_painter.dart';
+import 'package:MPSP/forms/signin_form.dart';
+import 'package:MPSP/forms/signup_form.dart';
 import 'package:animations/animations.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

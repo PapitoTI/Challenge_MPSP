@@ -1,4 +1,4 @@
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 
 ///Para alterar olhe o Material Design
@@ -16,10 +16,10 @@ InputDecoration signupInputDecoration({String hintText, String labelText}) {
       borderSide: BorderSide(color: Colors.white),
     ),
     errorBorder: const UnderlineInputBorder(
-      borderSide: BorderSide(color: Palett.fiap),
+      borderSide: BorderSide(color: Palette.fiap),
     ),
     focusedErrorBorder: const UnderlineInputBorder(
-      borderSide: BorderSide(width: 2, color: Palett.fiap),
+      borderSide: BorderSide(width: 2, color: Palette.fiap),
     ),
     errorStyle: const TextStyle(color: Colors.white),
   );
@@ -39,11 +39,11 @@ InputDecoration signInInputDecoration({String hintText, String labelText}) {
       borderSide: BorderSide(color: Colors.black),
     ),
     errorBorder: const UnderlineInputBorder(
-      borderSide: BorderSide(color: Palett.vermelhompsp),
+      borderSide: BorderSide(color: Palette.vermelhompsp),
     ),
     focusedErrorBorder: const UnderlineInputBorder(
-      borderSide: BorderSide(width: 2, color: Palett.vermelhompsp2),
+      borderSide: BorderSide(width: 2, color: Palette.vermelhompsp2),
     ),
-    errorStyle: const TextStyle(color: Palett.fiap),
+    errorStyle: const TextStyle(color: Palette.fiap),
   );
 }

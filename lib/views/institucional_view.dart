@@ -1,7 +1,7 @@
-import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
-import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/screens/botons/chathade.bottom.dart';
-import 'package:MPSP/screens/noticias.slide.dart';
+import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
+import 'package:MPSP/config/palette.dart';
+import 'package:MPSP/screens/buttons/chathead.button.dart';
+import 'package:MPSP/screens/noticias_slide.dart';
 import 'package:flutter/material.dart';
 
 class Institucional extends StatelessWidget with NavigationStates {
@@ -31,14 +31,14 @@ class Institucional extends StatelessWidget with NavigationStates {
                         InkWell(
                           child: Icon(
                             Icons.menu,
-                            color: Palett.vermelhompsp,
+                            color: Palette.vermelhompsp,
                           ),
                           onTap: onMenuTap,
                         ),
                         Text(
                           "MPSP",
                           style: TextStyle(
-                              fontSize: 25, color: Palett.vermelhompsp),
+                              fontSize: 25, color: Palette.vermelhompsp),
                         ),
                         Text(" "),
                       ],
@@ -52,7 +52,7 @@ class Institucional extends StatelessWidget with NavigationStates {
             ),
           ),
         ),
-        ChatHade()
+        ChatHead()
       ],
     );
   }

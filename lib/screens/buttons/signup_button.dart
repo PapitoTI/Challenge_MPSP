@@ -1,4 +1,4 @@
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -24,7 +24,7 @@ class SignUpBar extends StatelessWidget {
             label,
             style: const TextStyle(
               fontWeight: FontWeight.w800,
-              color: Palett.brancompsp,
+              color: Palette.brancompsp,
               fontSize: 24,
             ),
           ),
@@ -64,7 +64,7 @@ class SignInBar extends StatelessWidget {
             label,
             style: const TextStyle(
               fontWeight: FontWeight.w800,
-              color: Palett.vermelhompsp,
+              color: Palette.vermelhompsp,
               fontSize: 24,
             ),
           ),
@@ -97,7 +97,7 @@ class _LoadingIndicator extends StatelessWidget {
       child: Visibility(
         visible: isLoading,
         child: const LinearProgressIndicator(
-          backgroundColor: Palett.vermelhompsp,
+          backgroundColor: Palette.vermelhompsp,
         ),
       ),
     );
@@ -117,13 +117,13 @@ class _RoundContinueBotton extends StatelessWidget {
     return RawMaterialButton(
       onPressed: onPressed,
       elevation: 0.0,
-      fillColor: Palett.vermelhompsp2,
-      splashColor: Palett.brancompsp,
+      fillColor: Palette.vermelhompsp2,
+      splashColor: Palette.brancompsp,
       padding: const EdgeInsets.all(22.0),
       shape: const CircleBorder(),
       child: const Icon(
         FontAwesomeIcons.longArrowAltRight,
-        color: Palett.brancompsp,
+        color: Palette.brancompsp,
         size: 24,
       ),
     );

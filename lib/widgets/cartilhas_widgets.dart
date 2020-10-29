@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -83,7 +83,7 @@ class CartilhasPage extends StatelessWidget {
                 //width: 100,
                 height: 50,
                 decoration: BoxDecoration(
-                    color: Palett.azulmpsp,
+                    color: Palette.azulmpsp,
                     borderRadius: BorderRadius.circular(20)),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40),

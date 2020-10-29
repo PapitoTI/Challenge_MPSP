@@ -1,4 +1,4 @@
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 
 class TopContainer extends StatelessWidget {
@@ -14,7 +14,7 @@ class TopContainer extends StatelessWidget {
       padding:
           padding != null ? padding : EdgeInsets.symmetric(horizontal: 20.0),
       decoration: BoxDecoration(
-          color: Palett.vermelhompsp,
+          color: Palette.vermelhompsp,
           borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(25.0),
             bottomLeft: Radius.circular(25.0),

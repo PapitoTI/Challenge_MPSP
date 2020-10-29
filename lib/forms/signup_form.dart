@@ -1,7 +1,7 @@
-import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/screens/botons/sign.in.up.bottom.dart';
-import 'package:MPSP/config/text_field.custom.dart';
-import 'package:MPSP/screens/controller/menu.controle.dart';
+import 'package:MPSP/config/palette.dart';
+import 'package:MPSP/screens/buttons/signup_button.dart';
+import 'package:MPSP/config/text_field_custom.dart';
+import 'package:MPSP/screens/controller/menu_controle.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {
@@ -27,7 +27,7 @@ class SignUp extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   '\nCadastre-se\nMPSP',
-                  style: TextStyle(fontSize: 40, color: Palett.brancompsp),
+                  style: TextStyle(fontSize: 40, color: Palette.brancompsp),
                 ),
               ),
             ),
@@ -80,14 +80,14 @@ class SignUp extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: InkWell(
-                    splashColor: Palett.brancompsp,
+                    splashColor: Palette.brancompsp,
                     onTap: () {
                       onLogInPressed?.call();
                     },
                     child: const Text(
                       'Entrar',
                       style: TextStyle(
-                        color: Palett.brancompsp,
+                        color: Palette.brancompsp,
                         fontSize: 16,
                         decoration: TextDecoration.underline,
                       ),

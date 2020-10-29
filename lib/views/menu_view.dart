@@ -1,5 +1,5 @@
-import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -40,7 +40,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "INSTITUCIONAL",
                       style: TextStyle(
-                        color: Palett.brancompsp,
+                        color: Palette.brancompsp,
                         fontSize: 24,
                         fontWeight: bottonColor == 0
                             ? FontWeight.w900
@@ -60,7 +60,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "ÁREAS DE ATUAÇÃO",
                       style: TextStyle(
-                        color: Palett.brancompsp,
+                        color: Palette.brancompsp,
                         fontSize: 24,
                         fontWeight: bottonColor == 1
                             ? FontWeight.w900
@@ -80,7 +80,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "CIDADÃO",
                       style: TextStyle(
-                        color: Palett.brancompsp,
+                        color: Palette.brancompsp,
                         fontSize: 24,
                         fontWeight: bottonColor == 2
                             ? FontWeight.w900
@@ -100,7 +100,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "SERVIÇOS",
                       style: TextStyle(
-                        color: Palett.brancompsp,
+                        color: Palette.brancompsp,
                         fontSize: 24,
                         fontWeight: bottonColor == 3
                             ? FontWeight.w900

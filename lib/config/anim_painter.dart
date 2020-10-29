@@ -1,6 +1,6 @@
 import 'dart:math';
 import 'dart:ui';
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/config/Palette.dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/rendering.dart';
 
@@ -9,16 +9,16 @@ import 'package:flutter/rendering.dart';
 class BackgroundPainter extends CustomPainter {
   BackgroundPainter({Animation<double> animation})
       : redPaint = Paint()
-          ..color = Palett.vermelhompsp
+          ..color = Palette.vermelhompsp
           ..style = PaintingStyle.fill,
         red2Paint = Paint()
-          ..color = Palett.vermelhompsp2
+          ..color = Palette.vermelhompsp2
           ..style = PaintingStyle.fill,
         bluePaint = Paint()
-          ..color = Palett.azulmpsp
+          ..color = Palette.azulmpsp
           ..style = PaintingStyle.fill,
         whitePaint = Paint()
-          ..color = Palett.brancompsp
+          ..color = Palette.brancompsp
           ..style = PaintingStyle.fill,
         liquidAnim = CurvedAnimation(
           curve: Curves.elasticOut,

@@ -1,5 +1,5 @@
-import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
-import 'package:MPSP/config/pallet.dart';
+import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
+import 'package:MPSP/config/palette.dart';
 import 'package:MPSP/widgets/mp_widgets.dart';
 import 'package:MPSP/widgets/faleconosco_widgets.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +24,7 @@ class Cidadao extends StatelessWidget with NavigationStates {
             children: [
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
-                color: Palett.vermelhompsp2,
+                color: Palette.vermelhompsp2,
                 height: 80,
                 width: width,
                 child: Padding(
@@ -39,7 +39,7 @@ class Cidadao extends StatelessWidget with NavigationStates {
                           InkWell(
                             child: Icon(
                               Icons.menu,
-                              color: Palett.brancompsp,
+                              color: Palette.brancompsp,
                             ),
                             onTap: onMenuTap,
                           ),
@@ -47,12 +47,12 @@ class Cidadao extends StatelessWidget with NavigationStates {
                             "Cidadão",
                             style: TextStyle(
                                 fontSize: 24,
-                                color: Palett.brancompsp,
+                                color: Palette.brancompsp,
                                 fontFamily: "Roboto"),
                           ),
                           Icon(
                             Icons.chat,
-                            color: Palett.brancompsp,
+                            color: Palette.brancompsp,
                           ),
                         ],
                       ),
@@ -61,17 +61,17 @@ class Cidadao extends StatelessWidget with NavigationStates {
                 ),
               ),
               Container(
-                color: Palett.vermelhompsp2,
+                color: Palette.vermelhompsp2,
                 child: TabBar(
-                    labelColor: Palett.vermelhompsp2,
-                    unselectedLabelColor: Palett.brancompsp,
+                    labelColor: Palette.vermelhompsp2,
+                    unselectedLabelColor: Palette.brancompsp,
                     indicatorSize: TabBarIndicatorSize.tab,
                     indicator: BoxDecoration(
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(30),
                           topRight: Radius.circular(30),
                         ),
-                        color: Palett.brancompsp),
+                        color: Palette.brancompsp),
                     tabs: [
                       Tab(
                         icon: Icon(Icons.article),
