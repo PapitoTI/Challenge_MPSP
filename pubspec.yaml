@@ -28,6 +28,7 @@ dependencies:
   flutter_bloc: ^2.1.1
   font_awesome_flutter: ^8.10.0
   google_fonts: ^1.1.0
+  url_launcher: ^5.7.5
 
 dev_dependencies:
   flutter_test:
@@ -37,6 +38,28 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:
+  assets:
+    - assets/img/area_civel/
+    - assets/img/area_consumidor/
+    - assets/img/area_criminal/
+    - assets/img/cidadao_cartilhas/
+    - assets/img/cidadao_mp/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Black.ttf
+        - asset: assets/fonts/Roboto-BlackItalic.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-BoldItalic.ttf
+        - asset: assets/fonts/Roboto-Italic.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto-LightItalic.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-MediumItalic.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Thin.ttf
+        - asset: assets/fonts/Roboto-ThinItalic.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
