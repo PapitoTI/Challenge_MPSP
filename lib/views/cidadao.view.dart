@@ -1,8 +1,7 @@
 import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
 import 'package:MPSP/config/pallet.dart';
-import 'package:MPSP/widgets/consumidor_widgets.dart';
-import 'package:MPSP/widgets/criminal_widgets.dart';
-import 'package:MPSP/widgets/top_container.dart';
+import 'package:MPSP/widgets/mp_widgets.dart';
+import 'package:MPSP/widgets/faleconosco_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:MPSP/widgets/cartilhas_widgets.dart';
 
@@ -75,22 +74,22 @@ class Cidadao extends StatelessWidget with NavigationStates {
                         color: Palett.brancompsp),
                     tabs: [
                       Tab(
-                        icon: Icon(Icons.account_circle),
+                        icon: Icon(Icons.article),
                         text: 'Cartilhas',
                       ),
                       Tab(
-                        icon: Icon(Icons.account_circle),
+                        icon: Icon(Icons.badge),
                         text: 'Conheça o MP',
                       ),
                       Tab(
-                        icon: Icon(Icons.account_circle),
+                        icon: Icon(Icons.contact_phone),
                         text: 'Fale Conosco',
                       ),
                     ]),
               ),
               Flexible(
                 child: TabBarView(
-                  children: [CartilhasPage(), ConsumidorPage(), CriminalPage()],
+                  children: [CartilhasPage(), MPPage(), FaleConoscoPage()],
                 ),
               ),
             ],

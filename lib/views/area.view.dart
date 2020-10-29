@@ -2,7 +2,6 @@ import 'package:MPSP/bloc/navigation.bloc/navigation.bloc.dart';
 import 'package:MPSP/config/pallet.dart';
 import 'package:MPSP/widgets/consumidor_widgets.dart';
 import 'package:MPSP/widgets/criminal_widgets.dart';
-import 'package:MPSP/widgets/top_container.dart';
 import 'package:flutter/material.dart';
 import 'package:MPSP/widgets/civel_widgets.dart';
 
@@ -79,11 +78,11 @@ class Area extends StatelessWidget with NavigationStates {
                         text: 'Cível',
                       ),
                       Tab(
-                        icon: Icon(Icons.account_circle),
+                        icon: Icon(Icons.apartment),
                         text: 'Consumidor',
                       ),
                       Tab(
-                        icon: Icon(Icons.account_circle),
+                        icon: Icon(Icons.announcement),
                         text: 'Criminal',
                       ),
                     ]),

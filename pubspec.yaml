@@ -43,6 +43,8 @@ flutter:
     - assets/img/area_consumidor/
     - assets/img/area_criminal/
     - assets/img/cidadao_cartilhas/
+    - assets/img/cidadao_mp/
+
   fonts:
     - family: Roboto
       fonts:
