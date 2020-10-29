@@ -28,6 +28,7 @@ dependencies:
   flutter_bloc: ^2.1.1
   font_awesome_flutter: ^8.10.0
   google_fonts: ^1.1.0
+  material_design_icons_flutter: null
 
 dev_dependencies:
   flutter_test:
@@ -44,13 +45,17 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-   - assets/images/capa.jpeg
-   - assets/images/feminicidio.jpeg
-   - assets/images/lei-carolina.jpeg
-   - assets/images/lei-joana.jpeg
-   - assets/images/lei-maria.jpeg
-   - assets/images/minuto.jpeg
-   - assets/images/stealthing.jpeg
+    - assets/images/capa.jpeg
+    - assets/images/feminicidio.jpeg
+    - assets/images/lei-carolina.jpeg
+    - assets/images/lei-joana.jpeg
+    - assets/images/lei-maria.jpeg
+    - assets/images/minuto.jpeg
+    - assets/images/stealthing.jpeg
+    - assets/images/justica.jpg
+    - assets/images/brasao.svg
+
+    - assets/data.json
   #  - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
