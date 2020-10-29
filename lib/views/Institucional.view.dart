@@ -4,11 +4,8 @@ import 'package:MPSP/screens/botons/chathade.bottom.dart';
 import 'package:MPSP/screens/noticias.slide.dart';
 import 'package:flutter/material.dart';
 
-///ListView.separated tem que trocar
-
 class Institucional extends StatelessWidget with NavigationStates {
   final Function onMenuTap;
-
   const Institucional({Key key, this.onMenuTap}) : super(key: key);
 
   @override
@@ -47,7 +44,9 @@ class Institucional extends StatelessWidget with NavigationStates {
                       ],
                     ),
                   ),
-                  BannerMulher()
+                  BannerMulher(),
+                  ////
+                  ///
                 ],
               ),
             ),

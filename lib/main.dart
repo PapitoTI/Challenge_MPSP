@@ -1,6 +1,5 @@
 import 'package:MPSP/config/pallet.dart';
 import 'package:MPSP/views/signin.view.dart';
-//import 'package:MPSP/screens/botons/chathade.bottom.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -20,8 +19,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primaryColor: Palett.vermelhompsp),
       debugShowCheckedModeBanner: false,
       home: SigninView(),
-
-      ///home: ChatHade(),
     );
   }
 }

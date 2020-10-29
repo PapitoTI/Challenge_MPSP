@@ -1,3 +1,4 @@
+import 'package:MPSP/config/pallet.dart';
 import 'package:flutter/material.dart';
 
 class ChatHade extends StatefulWidget {
@@ -5,8 +6,16 @@ class ChatHade extends StatefulWidget {
   State<StatefulWidget> createState() => _ChatHadeState();
 }
 
-class _ChatHadeState extends State<ChatHade> {
+class _ChatHadeState extends State<ChatHade> with TickerProviderStateMixin {
   final GlobalKey _bottomKey = GlobalKey();
+  bool isOpened = false;
+  AnimationController _animationController;
+  Animation<Color> _buttonColor;
+  Animation<double> _animationIcon;
+  Animation<double> _translateButton;
+  Curve _curve = Curves.easeOut;
+  double _fabHeight = 56.0;
+
   Size bottomSize;
   Offset bottomLocation = Offset(0, 400);
 
@@ -59,7 +68,77 @@ class _ChatHadeState extends State<ChatHade> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => getBottomSize());
+    WidgetsBinding.instance.addPostFrameCallback((_) async => getBottomSize());
+    _animationController =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 400))
+          ..addListener(() {
+            setState(() {});
+          });
+    _animationIcon =
+        Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
+    _buttonColor =
+        ColorTween(begin: Palett.vermelhompsp, end: Palett.brancompsp).animate(
+            CurvedAnimation(
+                parent: _animationController,
+                curve: Interval(0.00, 1.00, curve: Curves.linear)));
+    _translateButton = Tween<double>(begin: _fabHeight, end: -14.0).animate(
+        CurvedAnimation(
+            parent: _animationController,
+            curve: Interval(0.0, 0.75, curve: _curve)));
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  Widget buttonBusca() {
+    return FloatingActionButton(
+      heroTag: "btn1",
+      onPressed: () {},
+      tooltip: "Busca",
+      child: Icon(Icons.search),
+    );
+  }
+
+  Widget buttonBug() {
+    return FloatingActionButton(
+      heroTag: "btn2",
+      onPressed: () {},
+      tooltip: "Bug",
+      child: Icon(Icons.bug_report),
+    );
+  }
+
+  Widget buttonFAQ() {
+    return FloatingActionButton(
+      backgroundColor: Palett.vermelhompsp,
+      foregroundColor: Colors.black,
+      heroTag: "btn3",
+      onPressed: () {},
+      tooltip: "FAQ",
+      child: Icon(Icons.supervised_user_circle),
+    );
+  }
+
+  Widget buttonMenu() {
+    return FloatingActionButton(
+      key: _bottomKey,
+      onPressed: animate,
+      tooltip: "Menu",
+      child: AnimatedIcon(
+        icon: AnimatedIcons.menu_close,
+        progress: _animationIcon,
+      ),
+    );
+  }
+
+  animate() {
+    if (!isOpened)
+      _animationController.forward();
+    else
+      _animationController.reverse();
+    isOpened = !isOpened;
   }
 
   @override
@@ -76,10 +155,25 @@ class _ChatHadeState extends State<ChatHade> {
       child: Stack(
         children: [
           Positioned(
-            child: FloatingActionButton(
-              key: _bottomKey,
-              onPressed: null,
-              backgroundColor: Colors.amber,
+            child: Column(
+              children: [
+                Transform(
+                  transform: Matrix4.translationValues(
+                      0.0, _translateButton.value * 3.0, 0.0),
+                  child: buttonBusca(),
+                ),
+                Transform(
+                  transform: Matrix4.translationValues(
+                      0.0, _translateButton.value * 2.0, 0.0),
+                  child: buttonBug(),
+                ),
+                Transform(
+                  transform: Matrix4.translationValues(
+                      0.0, _translateButton.value, 0.0),
+                  child: buttonFAQ(),
+                ),
+                buttonMenu()
+              ],
             ),
             left: bottomLocation.dx,
             top: bottomLocation.dy,
