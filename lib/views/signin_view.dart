@@ -21,7 +21,7 @@ class _SigninViewState extends State<SigninView> {
         accentColor: Palette.brancompsp,
         appBarTheme: const AppBarTheme(
           brightness: Brightness.dark,
-          color: Palette.fiap,
+          color: Palette.vermelhompsp,
         ),
       ),
       home: ControleScreen(),

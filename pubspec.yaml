@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -24,7 +24,11 @@ dependencies:
   flutter:
     sdk: flutter
   animations: ^1.1.2
+  cloud_firestore: ^0.12.5+2
   cupertino_icons: ^1.0.0
+  firebase_auth: ^0.11.1+7
+  firebase_core: ^0.4.0+6
+  firebase_storage: ^3.0.2
   flutter_bloc: ^2.1.1
   font_awesome_flutter: ^8.10.0
   google_fonts: ^1.1.0
@@ -45,6 +49,7 @@ flutter:
     - assets/img/cidadao_cartilhas/
     - assets/img/cidadao_mp/
     - assets/img/inst/
+    - assets/img/promo/
 
   fonts:
     - family: Roboto

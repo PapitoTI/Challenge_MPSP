@@ -1,5 +1,6 @@
 import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
 import 'package:MPSP/config/palette.dart';
+import 'package:MPSP/screens/botons/chathade.bottom.dart';
 import 'package:MPSP/screens/buttons/chathead.button.dart';
 import 'package:MPSP/screens/noticias_slide.dart';
 import 'package:flutter/material.dart';
@@ -52,6 +53,7 @@ class Institucional extends StatelessWidget with NavigationStates {
             ),
           ),
         ),
+        //ChatHade()
         ChatHead()
       ],
     );

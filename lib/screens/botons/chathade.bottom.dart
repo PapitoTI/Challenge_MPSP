@@ -1,18 +1,22 @@
+import 'dart:math';
+
 import 'package:MPSP/config/palette.dart';
-import 'package:MPSP/views/avaliacao_view.dart';
 import 'package:MPSP/views/promotor_view.dart';
-import 'package:MPSP/views/search_view.dart';
 import 'package:flutter/material.dart';
 
-class ChatHead extends StatefulWidget {
+class ChatHade extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => _ChatHeadState();
+  State<StatefulWidget> createState() => _ChatHadeState();
 }
 
-class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
+int toggle = 1;
+
+class _ChatHadeState extends State<ChatHade> with TickerProviderStateMixin {
   final GlobalKey _bottomKey = GlobalKey();
   bool isOpened = false;
   AnimationController _animationController;
+  AnimationController _bon;
+  TextEditingController _textEditingController;
   Animation<Color> _buttonColor;
   Animation<double> _animationIcon;
   Animation<double> _translateButton;
@@ -72,11 +76,17 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) async => getBottomSize());
+    _textEditingController = TextEditingController();
     _animationController =
         AnimationController(vsync: this, duration: Duration(milliseconds: 400))
           ..addListener(() {
             setState(() {});
           });
+    //controle do botão de pesquisa
+    _bon = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 375),
+    );
     _animationIcon =
         Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
     _buttonColor =
@@ -95,35 +105,132 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
     super.dispose();
   }
 
-  Widget buttonStar() {
-    return FloatingActionButton(
-      heroTag: "2",
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (BuildContext context) => Avaliacao(),
-          ),
-        );
-      },
-      tooltip: "Avaliação",
-      child: Icon(Icons.star),
+//colocar um trasforma no container
+  Widget buttonBusca() {
+    ///tamanho da expansão Cor amber
+    return Container(
+      color: Colors.amber,
+      height: 100,
+      width: 350.0,
+      alignment: Alignment(-0.10, 0.0),
+      child: AnimatedContainer(
+        //campo de pesquisa rosa
+        duration: Duration(milliseconds: 375),
+        height: 55,
+        width: (toggle == 1) ? 55.0 : 325,
+        curve: Curves.easeOut,
+        decoration: BoxDecoration(
+          color: Palette.brancompsp,
+          borderRadius: BorderRadius.circular(30.0),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black26,
+              spreadRadius: -10.0,
+              blurRadius: 10.0,
+              offset: Offset(0.0, 10.0),
+            ),
+          ],
+        ),
+        child: Stack(
+          children: [
+            AnimatedPositioned(
+              //botão de audio
+              duration: Duration(milliseconds: 375),
+              top: 6.0,
+              right: 7.0,
+              child: AnimatedOpacity(
+                opacity: (toggle == 1) ? 0.0 : 1.0,
+                duration: Duration(milliseconds: 200),
+                child: Container(
+                  padding: EdgeInsets.all(8.0),
+                  decoration: BoxDecoration(
+                    color: Palette.brancompsp,
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: AnimatedBuilder(
+                    child: Icon(
+                      Icons.mic,
+                      size: 25.0,
+                      color: Colors.black,
+                    ),
+                    builder: (context, widget) {
+                      return Transform.rotate(
+                        angle: _bon.value * 2.0 * pi,
+                        child: widget,
+                      );
+                    },
+                    animation: _bon,
+                  ),
+                ),
+              ),
+            ),
+            AnimatedPositioned(
+              ///campo do texto
+              duration: Duration(milliseconds: 375),
+              left: (toggle == 1) ? 20.0 : 50.0,
+              top: 13.0,
+              curve: Curves.easeOut,
+              child: AnimatedOpacity(
+                duration: Duration(milliseconds: 200),
+                opacity: (toggle == 1) ? 0.0 : 1.0,
+                child: Container(
+                  height: 23,
+                  width: 180,
+                  child: TextField(
+                    cursorRadius: Radius.circular(10.0),
+                    cursorWidth: 2.0,
+                    cursorColor: Colors.black,
+                    decoration: InputDecoration(
+                      floatingLabelBehavior: FloatingLabelBehavior.never,
+                      labelText: 'Search ...',
+                      labelStyle: TextStyle(
+                        color: Colors.black87,
+                        fontSize: 17.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                      alignLabelWithHint: true,
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                          borderSide: BorderSide.none),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Material(
+              /// campo do icone azul e controle de tamanho
+              /// chamar o lucas para refinar a logica
+              color: Palette.azulmpsp,
+
+              borderRadius: BorderRadius.circular(30.0),
+              child: IconButton(
+                iconSize: 43,
+                onPressed: () {
+                  setState(() {
+                    if (toggle == 0) {
+                      toggle = 1;
+                      _bon.forward();
+                    } else {
+                      toggle = 0;
+                      _bon.reverse();
+                    }
+                  });
+                },
+                icon: Icon(Icons.search),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
-  Widget buttonBusca() {
+  Widget buttonBug() {
     return FloatingActionButton(
-      heroTag: "1",
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (BuildContext context) => SearchPage(),
-          ),
-        );
-      },
-      tooltip: "Busca",
-      child: Icon(Icons.search),
+      heroTag: "btn2",
+      onPressed: () {},
+      tooltip: "Bug",
+      child: Icon(Icons.bug_report),
     );
   }
 
@@ -131,7 +238,7 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
     return FloatingActionButton(
       backgroundColor: Palette.vermelhompsp,
       foregroundColor: Colors.black,
-      heroTag: "3",
+      heroTag: "btn3",
       onPressed: () {
         Navigator.push(
           context,
@@ -183,13 +290,13 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
               children: [
                 Transform(
                   transform: Matrix4.translationValues(
-                      0.0, _translateButton.value * 3.0, 0.0),
+                      10.5, _translateButton.value * 3.0, 0.0),
                   child: buttonBusca(),
                 ),
                 Transform(
                   transform: Matrix4.translationValues(
                       0.0, _translateButton.value * 2.0, 0.0),
-                  child: buttonStar(),
+                  child: buttonBug(),
                 ),
                 Transform(
                   transform: Matrix4.translationValues(
