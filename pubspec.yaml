@@ -44,6 +44,7 @@ flutter:
     - assets/img/area_criminal/
     - assets/img/cidadao_cartilhas/
     - assets/img/cidadao_mp/
+    - assets/img/cidadao_falecon/
     - assets/img/inst/
 
   fonts:
