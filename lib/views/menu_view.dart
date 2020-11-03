@@ -31,6 +31,36 @@ class MenuController extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Container(
+                    child: Column(
+                      children: [
+                        Text(
+                          "MPSP",
+                          style: TextStyle(
+                              fontSize: 80,
+                              fontFamily: 'Roboto',
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Ministério Público",
+                          style: TextStyle(
+                              fontSize: 26,
+                              fontFamily: 'Roboto',
+                              color: Colors.black),
+                        ),
+                        Text(
+                          "do Estado de São Paulo",
+                          style: TextStyle(
+                              fontSize: 19,
+                              fontFamily: 'Roboto',
+                              color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 70,
+                  ),
                   GestureDetector(
                     onTap: () {
                       BlocProvider.of<NavigationBloc>(context)
