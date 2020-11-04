@@ -1,5 +1,4 @@
 import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
-import 'package:MPSP/config/palette.dart';
 import 'package:MPSP/screens/controller/screen_controller.dart';
 import 'package:MPSP/views/institucional_view.dart';
 import 'package:MPSP/views/area_view.dart';
@@ -9,7 +8,6 @@ import 'package:MPSP/views/services_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-///
 class Menu extends StatefulWidget {
   @override
   _MenuState createState() => _MenuState();
@@ -64,7 +62,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     screenHeight = size.height;
     screenWidth = size.width;
     return Scaffold(
-      backgroundColor: Palette.brancompsp,
+      backgroundColor: Colors.white,
       body: BlocProvider<NavigationBloc>(
         create: (context) => NavigationBloc(onMenuTap: onMenuTap),
         child: Stack(

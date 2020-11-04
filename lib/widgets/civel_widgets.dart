@@ -27,7 +27,6 @@ class CivelIconContainer extends StatelessWidget {
                 offset: Offset(0, 5),
               )
             ],
-            //color: Palett.azulmpsp,
             image: DecorationImage(
               image: AssetImage('$img'),
             )),
@@ -65,9 +64,7 @@ class CivelPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        //alignment: Alignment.topCenter,
         margin: const EdgeInsets.symmetric(horizontal: 2),
-        //color: Palett.vermelhompsp,
         width: 100,
         child: Column(
           children: [
@@ -82,8 +79,6 @@ class CivelPage extends StatelessWidget {
               ),
               child: Container(
                 alignment: Alignment.center,
-                //color: Palett.azulmpsp,
-                //width: 100,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Palette.azulmpsp,

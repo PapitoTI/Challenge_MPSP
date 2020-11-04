@@ -1,6 +1,5 @@
 import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
 import 'package:MPSP/config/palette.dart';
-//import 'package:MPSP/screens/botons/chathade.bottom.dart';
 import 'package:MPSP/screens/buttons/chathead.button.dart';
 import 'package:MPSP/screens/noticias_slide.dart';
 import 'package:MPSP/widgets/scrollCard_widgets.dart';
@@ -14,50 +13,67 @@ class Institucional extends StatelessWidget with NavigationStates {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    // var screenHeight = MediaQuery.of(context).size.height;
-    // var screenWidth = MediaQuery.of(context).size.width;
+
+    double width = MediaQuery.of(context).size.width;
 
     return Stack(
       children: [
         Container(
           height: size.height,
           width: size.width,
-          child: SafeArea(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 25, 10, 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                color: Palette.vermelhompsp,
+                height: 30,
+              ),
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                color: Palette.vermelhompsp,
+                height: 80,
+                width: width,
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 25),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      InkWell(
-                        child: Icon(
-                          Icons.menu,
-                          color: Palette.vermelhompsp,
-                        ),
-                        onTap: onMenuTap,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          InkWell(
+                            child: Icon(
+                              Icons.menu,
+                              color: Palette.brancompsp,
+                            ),
+                            onTap: onMenuTap,
+                          ),
+                          Text(
+                            "Ministério Público SP",
+                            style: TextStyle(
+                                fontSize: 24,
+                                color: Palette.brancompsp,
+                                fontFamily: "Montserrat"),
+                          ),
+                          Container()
+                        ],
                       ),
-                      Text(
-                        "Ministerio Publico SP",
-                        style: TextStyle(
-                            fontSize: 25, color: Palette.vermelhompsp),
-                      ),
-                      Text(" "),
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 40,
-                ),
-                BannerMulher(),
-                Scroll(),
-              ],
-            ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              BannerMulher(),
+              SizedBox(
+                height: 20,
+              ),
+              Scroll(),
+            ],
           ),
         ),
-        //ChatHade()
-
         ChatHead()
       ],
     );

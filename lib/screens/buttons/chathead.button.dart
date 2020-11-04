@@ -130,7 +130,7 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   Widget buttonFAQ() {
     return FloatingActionButton(
       backgroundColor: Palette.vermelhompsp,
-      foregroundColor: Colors.black,
+      foregroundColor: Colors.white,
       heroTag: "3",
       onPressed: () {
         Navigator.push(
@@ -153,7 +153,6 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
             Transform(
               transform: Matrix4.translationValues(
                   0.0, _translateButton.value * 4, 0.0),
-             
             ),
             Transform(
               transform: Matrix4.translationValues(
@@ -171,14 +170,11 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
               child: buttonBusca(),
             ),
             FloatingActionButton(
-          key: _bottomKey,
-          onPressed: animate,
-          tooltip: "Menu",
-          child: AnimatedIcon(
-            icon: AnimatedIcons.menu_close,
-            progress: _animationIcon,
-          ),
-        ),
+                backgroundColor: Palette.brancompsp,
+                key: _bottomKey,
+                onPressed: animate,
+                tooltip: "Menu",
+                child: Icon(Icons.person_search_rounded)),
           ],
         ),
       ],

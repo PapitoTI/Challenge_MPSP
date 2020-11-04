@@ -19,9 +19,53 @@ class SignIn extends StatelessWidget {
             flex: 3,
             child: Align(
               alignment: Alignment.centerLeft,
-              child: Text(
-                'MPSP',
-                style: TextStyle(fontSize: 40, color: Palette.brancompsp),
+              child: Padding(
+                padding: const EdgeInsets.only(top: 40.0),
+                child: Container(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            "MP",
+                            style: TextStyle(
+                                fontSize: 80,
+                                fontFamily: 'Roboto',
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            "SP",
+                            style: TextStyle(
+                                fontSize: 80,
+                                color: Palette.brancompsp,
+                                fontFamily: 'Roboto',
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 135.0),
+                        child: Text(
+                          "Ministério Público",
+                          style: TextStyle(
+                              fontSize: 26,
+                              fontFamily: 'Roboto',
+                              color: Colors.black),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 135.0),
+                        child: Text(
+                          "do Estado de São Paulo",
+                          style: TextStyle(
+                              fontSize: 19,
+                              fontFamily: 'Roboto',
+                              color: Colors.black),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
@@ -62,7 +106,6 @@ class SignIn extends StatelessWidget {
                   child: InkWell(
                     splashColor: Palette.brancompsp,
                     onTap: () {
-                      //onSignUpClicked?.call();
                       if (onSignUpClicked != null) {
                         onSignUpClicked();
                       }

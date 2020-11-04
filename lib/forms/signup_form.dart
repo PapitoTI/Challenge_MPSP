@@ -19,15 +19,61 @@ class SignUp extends StatelessWidget {
           Expanded(
             flex: 2,
             child: Padding(
-              //realinhar
               padding: EdgeInsets.only(
                 left: 1,
               ),
               child: Align(
                 alignment: Alignment.centerLeft,
-                child: Text(
-                  '\nCadastre-se\nMPSP',
-                  style: TextStyle(fontSize: 40, color: Palette.brancompsp),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 135.0),
+                      child: Text(
+                        '\n\n\nCadastre-se',
+                        style:
+                            TextStyle(fontSize: 35, color: Palette.brancompsp),
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "MP",
+                          style: TextStyle(
+                              fontSize: 60,
+                              fontFamily: 'Roboto',
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "SP",
+                          style: TextStyle(
+                              fontSize: 60,
+                              color: Palette.brancompsp,
+                              fontFamily: 'Roboto',
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 180.0),
+                      child: Text(
+                        "Ministério Público",
+                        style: TextStyle(
+                            fontSize: 20.5,
+                            fontFamily: 'Roboto',
+                            color: Colors.black),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 180.0),
+                      child: Text(
+                        "do Estado de São Paulo",
+                        style: TextStyle(
+                            fontSize: 15.25,
+                            fontFamily: 'Roboto',
+                            color: Colors.black),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),

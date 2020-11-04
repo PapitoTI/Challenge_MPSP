@@ -67,7 +67,6 @@ class _PromotorState extends State<Promotor> {
             padding: EdgeInsets.all(8),
             child: Column(
               children: [
-                //listview
                 caixaMsg,
               ],
             ),

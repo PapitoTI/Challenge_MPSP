@@ -1,5 +1,4 @@
 import 'package:MPSP/bloc/navigation.bloc/navigation_bloc.dart';
-import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -32,31 +31,13 @@ class MenuController extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    child: Column(
-                      children: [
-                        Text(
-                          "MPSP",
-                          style: TextStyle(
-                              fontSize: 80,
-                              fontFamily: 'Roboto',
-                              fontWeight: FontWeight.bold),
-                        ),
-                        Text(
-                          "Ministério Público",
-                          style: TextStyle(
-                              fontSize: 26,
-                              fontFamily: 'Roboto',
-                              color: Colors.black),
-                        ),
-                        Text(
-                          "do Estado de São Paulo",
-                          style: TextStyle(
-                              fontSize: 19,
-                              fontFamily: 'Roboto',
-                              color: Colors.black),
-                        ),
-                      ],
-                    ),
+                    width: 240,
+                    height: 120,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage('assets/img/cidadao_mp/mp.jpg'))),
                   ),
                   SizedBox(
                     height: 70,
@@ -72,6 +53,7 @@ class MenuController extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
+                        fontFamily: "Montserrat",
                         fontWeight: bottonColor == 0
                             ? FontWeight.w900
                             : FontWeight.normal,
@@ -92,6 +74,7 @@ class MenuController extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
+                        fontFamily: "Montserrat",
                         fontWeight: bottonColor == 1
                             ? FontWeight.w900
                             : FontWeight.normal,
@@ -112,6 +95,7 @@ class MenuController extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
+                        fontFamily: "Montserrat",
                         fontWeight: bottonColor == 2
                             ? FontWeight.w900
                             : FontWeight.normal,
@@ -132,6 +116,7 @@ class MenuController extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: 24,
+                        fontFamily: "Montserrat",
                         fontWeight: bottonColor == 3
                             ? FontWeight.w900
                             : FontWeight.normal,

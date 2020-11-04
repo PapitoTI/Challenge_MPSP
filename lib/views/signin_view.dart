@@ -13,7 +13,7 @@ class _SigninViewState extends State<SigninView> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "MPSP",
+      title: "MPSPssss",
       theme: ThemeData(
         textTheme: GoogleFonts.anonymousProTextTheme(),
 

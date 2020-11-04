@@ -27,7 +27,6 @@ class MPIconContainer extends StatelessWidget {
                 offset: Offset(0, 5),
               )
             ],
-            //color: Palett.azulmpsp,
             image: DecorationImage(
               image: AssetImage('$img'),
             )),
@@ -87,9 +86,7 @@ class MPPage extends StatelessWidget {
               ),
               child: Container(
                 alignment: Alignment.center,
-                //color: Palette.azulmpsp,
                 width: MediaQuery.of(context).size.width * 1.0,
-                //height: 50,
                 decoration: BoxDecoration(
                     color: Palette.azulmpsp,
                     borderRadius: BorderRadius.circular(20)),

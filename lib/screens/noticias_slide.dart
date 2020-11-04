@@ -71,12 +71,16 @@ class BannerMulher extends StatelessWidget {
                   children: [
                     Text(
                       bannerItems[x],
-                      style: TextStyle(fontSize: 25.0, color: Colors.white),
+                      style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: "Montserrat"),
                     ),
-                    Text(
-                      "Para te informar",
-                      style: TextStyle(fontSize: 12.0, color: Colors.white),
-                    ),
+                    Text("Para te informar",
+                        style: TextStyle(
+                            fontSize: 12.0,
+                            color: Colors.white,
+                            fontFamily: "Montserrat")),
                   ],
                 ),
               ),

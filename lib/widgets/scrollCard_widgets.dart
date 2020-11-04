@@ -47,7 +47,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -57,7 +57,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -102,7 +102,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -112,7 +112,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -157,7 +157,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -167,7 +167,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -212,17 +212,17 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
                           child: Text(
-                            "Escola Superioer do MP",
+                            "Escola Superior do MP",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -267,7 +267,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -277,7 +277,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -322,17 +322,17 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
                           child: Text(
-                            "Colegio de Procuradores",
+                            "Colégio de Procuradores",
                             style: TextStyle(
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -377,7 +377,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -387,7 +387,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -428,11 +428,11 @@ class _ScrollState extends State<Scroll> {
                       children: [
                         Container(
                           child: Text(
-                            "Atribuição | Comite de segurança institucional | Contato",
+                            "Atribuição | Comitê de Segurança Institucional | Contato",
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -442,7 +442,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -487,7 +487,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.white38,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -497,7 +497,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Palette.brancompsp,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(
@@ -543,7 +543,7 @@ class _ScrollState extends State<Scroll> {
                             style: TextStyle(
                                 fontSize: 13,
                                 color: Colors.black45,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Container(
@@ -553,7 +553,7 @@ class _ScrollState extends State<Scroll> {
                                 fontSize: 20,
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: "Roboto"),
+                                fontFamily: "Montserrat"),
                           ),
                         ),
                         Padding(

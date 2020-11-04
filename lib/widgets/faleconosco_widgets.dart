@@ -64,8 +64,6 @@ class FaleConoscoPage extends StatelessWidget {
               ),
               child: Container(
                 alignment: Alignment.center,
-                //color: Palett.azulmpsp,
-                //width: 100,
                 height: 50,
                 decoration: BoxDecoration(
                     color: Palette.azulmpsp,

@@ -53,7 +53,7 @@ flutter:
     - assets/img/promo/
 
   fonts:
-    - family: Roboto
+    - family: Montserrat
       fonts:
         - asset: assets/fonts/Montserrat-Bold.ttf
         - asset: assets/fonts/Montserrat-Regular.ttf
