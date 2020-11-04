@@ -17,7 +17,6 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   Animation<double> _animationIcon;
   Animation<double> _translateButton;
   Curve _curve = Curves.easeOut;
-  double _fabHeight = 56.0;
 
   Size bottomSize;
   Offset bottomLocation = Offset(0, 400);
@@ -40,13 +39,14 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
     final double endY = context.size.height - bottomSize.height;
 
     ///Certifique-se de que o widget esteja sempre dentro da área da tela
-    if (startX < offset.dx && offset.dx < endX) {
-      if (startY < offset.dy && offset.dy < endY) {
-        ///atualizando localização
-        setState(() {
-          bottomLocation = Offset(offset.dx, offset.dy);
-        });
-      }
+    if (startX < offset.dx &&
+        offset.dx < endX &&
+        startY < offset.dy &&
+        offset.dy < endY) {
+      ///atualizando localização
+      setState(() {
+        bottomLocation = Offset(offset.dx, offset.dy);
+      });
     }
   }
 
@@ -84,7 +84,7 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
             .animate(CurvedAnimation(
                 parent: _animationController,
                 curve: Interval(0.00, 1.00, curve: Curves.linear)));
-    _translateButton = Tween<double>(begin: _fabHeight, end: -14.0).animate(
+    _translateButton = Tween<double>(begin: 56, end: -14.0).animate(
         CurvedAnimation(
             parent: _animationController,
             curve: Interval(0.0, 0.75, curve: _curve)));
@@ -93,22 +93,6 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   @override
   void dispose() {
     super.dispose();
-  }
-
-  Widget buttonStar() {
-    return FloatingActionButton(
-      heroTag: "2",
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (BuildContext context) => Avaliacao(),
-          ),
-        );
-      },
-      tooltip: "Avaliação",
-      child: Icon(Icons.star),
-    );
   }
 
   Widget buttonBusca() {
@@ -124,6 +108,22 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
       },
       tooltip: "Busca",
       child: Icon(Icons.search),
+    );
+  }
+
+  Widget buttonStar() {
+    return FloatingActionButton(
+      heroTag: "2",
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) => Avaliacao(),
+          ),
+        );
+      },
+      tooltip: "Avaliação",
+      child: Icon(Icons.star),
     );
   }
 
@@ -146,14 +146,42 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   }
 
   Widget buttonMenu() {
-    return FloatingActionButton(
-      key: _bottomKey,
-      onPressed: animate,
-      tooltip: "Menu",
-      child: AnimatedIcon(
-        icon: AnimatedIcons.menu_close,
-        progress: _animationIcon,
-      ),
+    return Stack(
+      children: [
+        Column(
+          children: [
+            Transform(
+              transform: Matrix4.translationValues(
+                  0.0, _translateButton.value * 4, 0.0),
+             
+            ),
+            Transform(
+              transform: Matrix4.translationValues(
+                  0.0, _translateButton.value * 3, 0.0),
+              child: buttonStar(),
+            ),
+            Transform(
+              transform: Matrix4.translationValues(
+                  0.0, _translateButton.value * 2, 0.0),
+              child: buttonFAQ(),
+            ),
+            Transform(
+              transform:
+                  Matrix4.translationValues(0.0, _translateButton.value, 0.0),
+              child: buttonBusca(),
+            ),
+            FloatingActionButton(
+          key: _bottomKey,
+          onPressed: animate,
+          tooltip: "Menu",
+          child: AnimatedIcon(
+            icon: AnimatedIcons.menu_close,
+            progress: _animationIcon,
+          ),
+        ),
+          ],
+        ),
+      ],
     );
   }
 
@@ -179,26 +207,7 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
       child: Stack(
         children: [
           Positioned(
-            child: Column(
-              children: [
-                Transform(
-                  transform: Matrix4.translationValues(
-                      0.0, _translateButton.value * 3.0, 0.0),
-                  child: buttonBusca(),
-                ),
-                Transform(
-                  transform: Matrix4.translationValues(
-                      0.0, _translateButton.value * 2.0, 0.0),
-                  child: buttonStar(),
-                ),
-                Transform(
-                  transform: Matrix4.translationValues(
-                      0.0, _translateButton.value, 0.0),
-                  child: buttonFAQ(),
-                ),
-                buttonMenu()
-              ],
-            ),
+            child: buttonMenu(),
             left: bottomLocation.dx,
             top: bottomLocation.dy,
           )

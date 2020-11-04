@@ -70,7 +70,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "INSTITUCIONAL",
                       style: TextStyle(
-                        color: Palette.brancompsp,
+                        color: Colors.black,
                         fontSize: 24,
                         fontWeight: bottonColor == 0
                             ? FontWeight.w900
@@ -90,7 +90,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "ÁREAS DE ATUAÇÃO",
                       style: TextStyle(
-                        color: Palette.brancompsp,
+                        color: Colors.black,
                         fontSize: 24,
                         fontWeight: bottonColor == 1
                             ? FontWeight.w900
@@ -110,7 +110,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "CIDADÃO",
                       style: TextStyle(
-                        color: Palette.brancompsp,
+                        color: Colors.black,
                         fontSize: 24,
                         fontWeight: bottonColor == 2
                             ? FontWeight.w900
@@ -130,7 +130,7 @@ class MenuController extends StatelessWidget {
                     child: Text(
                       "SERVIÇOS",
                       style: TextStyle(
-                        color: Palette.brancompsp,
+                        color: Colors.black,
                         fontSize: 24,
                         fontWeight: bottonColor == 3
                             ? FontWeight.w900

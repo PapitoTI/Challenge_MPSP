@@ -64,7 +64,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     screenHeight = size.height;
     screenWidth = size.width;
     return Scaffold(
-      backgroundColor: Palette.vermelhompsp,
+      backgroundColor: Palette.brancompsp,
       body: BlocProvider<NavigationBloc>(
         create: (context) => NavigationBloc(onMenuTap: onMenuTap),
         child: Stack(
