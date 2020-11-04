@@ -49,7 +49,7 @@ class ConsumidorIconTitle extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Text(
         "$title",
-        style: TextStyle(fontFamily: "Roboto", fontSize: 14),
+        style: TextStyle(fontFamily: "Montserrat", fontSize: 14),
         textAlign: TextAlign.center,
       ),
     ));
@@ -95,7 +95,7 @@ class ConsumidorPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: Colors.white,
-                        fontFamily: "Roboto"),
+                        fontFamily: "Montserrat"),
                   ),
                 ),
               ),

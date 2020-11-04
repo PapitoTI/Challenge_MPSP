@@ -49,7 +49,7 @@ class CartilhasIconTitle extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Text(
         "$title",
-        style: TextStyle(fontFamily: "Roboto", fontSize: 14),
+        style: TextStyle(fontFamily: "Montserrat", fontSize: 14),
         textAlign: TextAlign.center,
       ),
     ));
@@ -95,7 +95,7 @@ class CartilhasPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: Colors.white,
-                        fontFamily: "Roboto"),
+                        fontFamily: "Montserrat"),
                   ),
                 ),
               ),

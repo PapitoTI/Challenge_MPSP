@@ -51,7 +51,7 @@ class Cidadao extends StatelessWidget with NavigationStates {
                           style: TextStyle(
                               fontSize: 24,
                               color: Palette.brancompsp,
-                              fontFamily: "Roboto"),
+                              fontFamily: "Montserrat"),
                         ),
                         Container()
                       ],

@@ -31,11 +31,11 @@ class FaleConoscoTile extends StatelessWidget {
             ),
             title: Text(
               "$title",
-              style: TextStyle(fontFamily: "Roboto"),
+              style: TextStyle(fontFamily: "Montserrat"),
             ),
             subtitle: Text(
               "$desc",
-              style: TextStyle(fontFamily: "Roboto"),
+              style: TextStyle(fontFamily: "Montserrat"),
             ),
             isThreeLine: true,
           ),
@@ -77,7 +77,7 @@ class FaleConoscoPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: Colors.white,
-                        fontFamily: "Roboto"),
+                        fontFamily: "Montserrat"),
                   ),
                 ),
               ),
