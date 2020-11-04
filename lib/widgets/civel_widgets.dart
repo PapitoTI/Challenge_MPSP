@@ -227,7 +227,7 @@ class CivelPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CivelIconTitle(
-                      "Agendamento de exames de DNA                                                                   "),
+                      "Agendamento de Exames de DNA                                                                   "),
                   Flexible(
                       child: Text(
                     "",

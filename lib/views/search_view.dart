@@ -30,10 +30,32 @@ class Search extends SearchDelegate<String> {
     "Acompanhamento do caso"
   ];
   final servicosRe = [
-    "Corregedoria",
-    "Feminicidio",
-    "Denuncia",
-    "Eleitoral",
+    "Áreas de Atuação",
+    "Cível",
+    "Consumidor",
+    "Criminal",
+    "Cidadão",
+    "Cartilhas",
+    "Conheça o MP",
+    "Fale Conosco",
+    "Serviços",
+    "Atos de Racionalização",
+    "Falências"
+        "Família",
+    "Fundações",
+    "Mandados de Segurança",
+    "Processo Civil",
+    "Registros Públicos",
+    "Roteiros",
+    "Termos de Cooperação",
+    "Agendamento de Exames de DNA",
+    "Conflitos de Atribuição",
+    "Consumidor Vencedor",
+    "Material de Apoio",
+    "Roteiros",
+    "Acervo",
+    "Armas de Fogo",
+    "Execução Criminal",
   ];
 
   @override
