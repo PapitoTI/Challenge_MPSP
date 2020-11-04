@@ -45,10 +45,13 @@ class CartilhasIconTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Flexible(
-        child: Text(
-      "$title",
-      style: TextStyle(fontFamily: "Roboto", fontSize: 14),
-      textAlign: TextAlign.center,
+        child: Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Text(
+        "$title",
+        style: TextStyle(fontFamily: "Montserrat", fontSize: 14),
+        textAlign: TextAlign.center,
+      ),
     ));
   }
 }
@@ -92,7 +95,7 @@ class CartilhasPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: Colors.white,
-                        fontFamily: "Roboto"),
+                        fontFamily: "Montserrat"),
                   ),
                 ),
               ),
@@ -112,8 +115,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Acessibilidade nos Municípios"),
-                  CartilhasIconTitle("Áreas de Risco"),
+                  CartilhasIconTitle(
+                      "Acessibilidade nos Municípios                                                                                  "),
+                  CartilhasIconTitle(
+                      "Áreas de Risco                                                                                             "),
                 ],
               ),
             ),
@@ -154,8 +159,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Bullying"),
-                  CartilhasIconTitle("Cartilha da Cidadania"),
+                  CartilhasIconTitle(
+                      "Bullying                                                                                                               "),
+                  CartilhasIconTitle(
+                      "Cartilha da Cidadania                                                                                                  "),
                 ],
               ),
             ),
@@ -174,8 +181,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Cartilha da Tolerância"),
-                  CartilhasIconTitle("Cartilha de Defesa Animal"),
+                  CartilhasIconTitle(
+                      "Cartilha da Tolerância                                                                                    "),
+                  CartilhasIconTitle(
+                      "Cartilha de Defesa Animal                                                                                   "),
                 ],
               ),
             ),
@@ -195,8 +204,9 @@ class CartilhasPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CartilhasIconTitle(
-                      "Cartilha de Enfrentamento ao Desaparecimento"),
-                  CartilhasIconTitle("Cartilha Eleitoral a regra é clara"),
+                      "Cartilha de Enfrentamento ao Desaparecimento                                                                               "),
+                  CartilhasIconTitle(
+                      "Cartilha Eleitoral a regra é clara                                                                                    "),
                 ],
               ),
             ),
@@ -215,8 +225,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Cidadão com Segurança"),
-                  CartilhasIconTitle("Coleta Seletiva - Pratique Esta Ideia"),
+                  CartilhasIconTitle(
+                      "Cidadão com Segurança                                                                               "),
+                  CartilhasIconTitle(
+                      "Coleta Seletiva - Pratique Esta Ideia                                                                   "),
                 ],
               ),
             ),
@@ -235,8 +247,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Combate à Dengue"),
-                  CartilhasIconTitle("Combustíveis - Combate a Cartéis"),
+                  CartilhasIconTitle(
+                      "Combate à Dengue                                                                                                               "),
+                  CartilhasIconTitle(
+                      "Combustíveis - Combate a Cartéis                                                                                                  "),
                 ],
               ),
             ),
@@ -255,8 +269,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Defesa da Concorrência"),
-                  CartilhasIconTitle("Direito e Diversidade"),
+                  CartilhasIconTitle(
+                      "Defesa da Concorrência                                                                                                  "),
+                  CartilhasIconTitle(
+                      "Direito e Diversidade                                                                                                       "),
                 ],
               ),
             ),
@@ -276,8 +292,9 @@ class CartilhasPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CartilhasIconTitle(
-                      "Eleições 2010 - Propaganda Eleitoral na Internet"),
-                  CartilhasIconTitle("Eleições e Combate à Corrupção"),
+                      "Eleições 2010 - Propaganda Eleitoral na Internet                                                                   "),
+                  CartilhasIconTitle(
+                      "Eleições e Combate à Corrupção                                                                        "),
                 ],
               ),
             ),
@@ -296,8 +313,10 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("FUNDEB"),
-                  CartilhasIconTitle("Gestão Ambiental - Faça sua parte"),
+                  CartilhasIconTitle(
+                      "FUNDEB                                                                                                                                              "),
+                  CartilhasIconTitle(
+                      "Gestão Ambiental - Faça sua parte                                                                                                                    "),
                 ],
               ),
             ),
@@ -318,7 +337,8 @@ class CartilhasPage extends StatelessWidget {
                 children: [
                   CartilhasIconTitle(
                       "Guia Operacional de Enfrentamento à Violência Sexual contra Crianças e Adolescentes"),
-                  CartilhasIconTitle("Guia Prático de Acessibilidade"),
+                  CartilhasIconTitle(
+                      "Guia Prático de Acessibilidade                                                                                                        "),
                 ],
               ),
             ),
@@ -338,8 +358,9 @@ class CartilhasPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CartilhasIconTitle(
-                      "Guia Prático de Direitos da Pessoa Idosa"),
-                  CartilhasIconTitle("Habitação - Desenho Universal"),
+                      "Guia Prático de Direitos da Pessoa Idosa                                                                   "),
+                  CartilhasIconTitle(
+                      "Habitação - Desenho Universal                                                                 "),
                 ],
               ),
             ),
@@ -359,9 +380,9 @@ class CartilhasPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CartilhasIconTitle(
-                      "Imprensa - Guia Prático de Relacionamento"),
+                      "Imprensa - Guia Prático de Relacionamento                                                                                    "),
                   CartilhasIconTitle(
-                      "Instituições Privadas de Ensino Superior"),
+                      "Instituições Privadas de Ensino Superior                                                                                         "),
                 ],
               ),
             ),
@@ -404,7 +425,8 @@ class CartilhasPage extends StatelessWidget {
                 children: [
                   CartilhasIconTitle(
                       "Justiça e Educação em Heliópolis e Guarulhos parceria para a cidadania"),
-                  CartilhasIconTitle("Lei Cidade Limpa"),
+                  CartilhasIconTitle(
+                      "Lei Cidade Limpa                                                                                                            "),
                 ],
               ),
             ),
@@ -423,11 +445,15 @@ class CartilhasPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CartilhasIconTitle("Manual Básico de Saúde Pública"),
+                  CartilhasIconTitle(
+                      "Manual Básico de Saúde Pública                                                                                        "),
                   CartilhasIconTitle(
                       "Mulheres em Situação de Violência no Contexto da Pandemia de Covid 19 - Capital"),
                 ],
               ),
+            ),
+            SizedBox(
+              height: 20,
             ),
           ],
         ),

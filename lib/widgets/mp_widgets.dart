@@ -47,7 +47,7 @@ class MPIconTitle extends StatelessWidget {
     return Flexible(
         child: Text(
       "$title",
-      style: TextStyle(fontFamily: "Roboto", fontSize: 14),
+      style: TextStyle(fontFamily: "Montserrat", fontSize: 14),
       textAlign: TextAlign.center,
     ));
   }
@@ -72,7 +72,7 @@ class MPPage extends StatelessWidget {
               child: Text(
                 "O que é o Ministério Público?",
                 style: TextStyle(
-                  fontFamily: "Roboto",
+                  fontFamily: "Montserrat",
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                   color: Palette.vermelhompsp2,
@@ -114,7 +114,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                       Text(
@@ -122,7 +122,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                       Text(
@@ -130,7 +130,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                       Text(
@@ -138,7 +138,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                       Text(
@@ -146,7 +146,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                       Text(
@@ -154,7 +154,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                       Text(
@@ -162,7 +162,7 @@ class MPPage extends StatelessWidget {
                         style: TextStyle(
                             fontSize: 14,
                             color: Colors.white,
-                            fontFamily: "Roboto"),
+                            fontFamily: "Montserrat"),
                       ),
                       SizedBox(height: 10),
                     ],

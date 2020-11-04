@@ -45,10 +45,13 @@ class ConsumidorIconTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Flexible(
-        child: Text(
-      "$title",
-      style: TextStyle(fontFamily: "Roboto", fontSize: 14),
-      textAlign: TextAlign.center,
+        child: Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 40),
+      child: Text(
+        "$title",
+        style: TextStyle(fontFamily: "Montserrat", fontSize: 14),
+        textAlign: TextAlign.center,
+      ),
     ));
   }
 }
@@ -92,7 +95,7 @@ class ConsumidorPage extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 14,
                         color: Colors.white,
-                        fontFamily: "Roboto"),
+                        fontFamily: "Montserrat"),
                   ),
                 ),
               ),
@@ -115,9 +118,9 @@ class ConsumidorPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ConsumidorIconTitle(
-                      "Conflitos de Atribuição                                            "),
+                      "Conflitos de Atribuição                                                       "),
                   ConsumidorIconTitle(
-                      "Consumidor Vencedor                                 "),
+                      "Consumidor Vencedor                                                          "),
                 ],
               ),
             ),
@@ -139,9 +142,9 @@ class ConsumidorPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ConsumidorIconTitle(
-                      "Material de Apoio                            "),
+                      "Material de Apoio                                                             "),
                   ConsumidorIconTitle(
-                      "Recurso Repetitivo                                               Repercussão Geral                                               IRDR"),
+                      "Recurso Repetitivo                                             Repercussão Geral                                                                                     IRDR"),
                 ],
               ),
             ),
@@ -162,13 +165,13 @@ class ConsumidorPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   ConsumidorIconTitle(
-                      "Roteiros                                                                                               "),
+                      "Roteiros                                                                                                             "),
                   ConsumidorIconTitle(
-                      "Acervo                                                            "),
+                      "Acervo                                                                                        "),
                 ],
               ),
             ),
-            SizedBox(height: spaceTitleToIcon),
+            SizedBox(height: 20),
           ],
         ),
       ),
