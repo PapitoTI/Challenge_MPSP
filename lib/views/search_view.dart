@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:MPSP/config/palette.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +8,10 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pesquise"),
+        title: Text(
+          "Pesquise",
+          style: TextStyle(fontFamily: "Montserrat"),
+        ),
         actions: [
           IconButton(
               icon: Icon(Icons.search),
@@ -15,19 +20,60 @@ class SearchPage extends StatelessWidget {
               }),
         ],
       ),
+      body: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height / 3,
+          ),
+          Container(
+            child: Center(
+              child: Icon(
+                Icons.search,
+                size: 70,
+                color: Colors.grey,
+              ),
+            ),
+          ),
+          Container(
+            child: Text(
+              "Utilize a lupa acima para realizar uma pesquisa!",
+              style: TextStyle(fontFamily: "Montserrat", color: Colors.grey),
+            ),
+          )
+        ],
+      ),
     );
   }
 }
 
 class Search extends SearchDelegate<String> {
   final servicos = [
-    "Direito Humanos",
-    "Corregedoria",
-    "Feminicidio",
-    "Denuncia",
-    "Eleitoral",
-    "Concursos",
-    "Acompanhamento do caso"
+    "Áreas de Atuação",
+    "Cível",
+    "Consumidor",
+    "Criminal",
+    "Cidadão",
+    "Cartilhas",
+    "Conheça o MP",
+    "Fale Conosco",
+    "Serviços",
+    "Atos de Racionalização",
+    "Falências",
+    "Família",
+    "Fundações",
+    "Mandados de Segurança",
+    "Processo Civil",
+    "Registros Públicos",
+    "Roteiros",
+    "Termos de Cooperação",
+    "Agendamento de Exames de DNA",
+    "Conflitos de Atribuição",
+    "Consumidor Vencedor",
+    "Material de Apoio",
+    "Roteiros",
+    "Acervo",
+    "Armas de Fogo",
+    "Execução Criminal",
   ];
   final servicosRe = [
     "Áreas de Atuação",
@@ -40,8 +86,8 @@ class Search extends SearchDelegate<String> {
     "Fale Conosco",
     "Serviços",
     "Atos de Racionalização",
-    "Falências"
-        "Família",
+    "Falências",
+    "Família",
     "Fundações",
     "Mandados de Segurança",
     "Processo Civil",
