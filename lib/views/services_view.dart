@@ -89,7 +89,7 @@ class Services extends StatelessWidget with NavigationStates {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Demostrativo | Comprovante | Contato",
+                                    "Demonstrativo | Comprovante | Contato",
                                     style: TextStyle(
                                         fontSize: 13,
                                         color: Colors.black38,
@@ -254,7 +254,7 @@ class Services extends StatelessWidget with NavigationStates {
                               children: [
                                 Container(
                                   child: Text(
-                                    "TRIBUNAIS | CONSELHOS",
+                                    "Tribunais | Conselhos",
                                     style: TextStyle(
                                         fontSize: 13,
                                         color: Colors.black38,
@@ -419,7 +419,7 @@ class Services extends StatelessWidget with NavigationStates {
                               children: [
                                 Container(
                                   child: Text(
-                                    "Lista de Antiguidade",
+                                    "Lista de Antiguidades",
                                     style: TextStyle(
                                         fontSize: 20,
                                         color: Colors.black,
@@ -474,7 +474,7 @@ class Services extends StatelessWidget with NavigationStates {
                                 ),
                                 Container(
                                   child: Text(
-                                    "Formulario Administrativo",
+                                    "Formulário Administrativo",
                                     style: TextStyle(
                                         fontSize: 20,
                                         color: Palette.brancompsp,
