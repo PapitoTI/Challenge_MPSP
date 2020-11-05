@@ -100,9 +100,9 @@ class CartilhasPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/1.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eoyzwst8bdVCnQElp_DrXPUBV6ZX1mgVkdnjhpfq3Xa4xw?e=QS6MaB'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/Acessibilidade_nos_municipios.pdf'),
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/2.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eh5GSqxq4oJIgqVCbBUThC0BSegNiOFzR2_AKqukvvbt4g?e=7GZ1ja')
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/AreasDeRisco.pdf')
               ],
             ),
             SizedBox(height: spaceIconToTitle),
@@ -122,9 +122,9 @@ class CartilhasPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/3.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eony4SkBR_BBpd5dpGj1Y_gBL_B4hXpJy4zcn7-O6JstWg?e=GSc4cy'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/atuacao-MP-conflitos-possessorios-coletivos.pdf'),
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/4.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/Eu-S_WjOk7hIoFfE9dwQ4ysBUqnewaqRuHQNLvSK8Xy9AA?e=vOgxwn'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/cartilha_atuacao_epidemia_dengue.pdf'),
               ],
             ),
             SizedBox(height: spaceIconToTitle),
@@ -144,9 +144,9 @@ class CartilhasPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/5.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/EsWz3udkDPRJu12TcO2PeG0BE6-_RK32VO1-GM8BQIle7Q?e=2sIPWc'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/bullying.pdf'),
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/6.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/EgFnAUiu4mlJjhjReWy6X78Bd6tv7UqqgSyYhyGHYLSENA?e=qqhcv3'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/Cartilha%20da%20Cidadania.pdf'),
               ],
             ),
             SizedBox(height: spaceIconToTitle),
@@ -166,9 +166,9 @@ class CartilhasPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/7.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/EtZfXKNngM1Hu2n4WUSBE88Ba24SgVb6Rz3K_nKtwS1yTw?e=8FDaGW'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/Tolerancia_cartilha_Impressao.pdf'),
                 CartilhasIconContainer('assets/img/cidadao_cartilhas/8.png',
-                    'https://mpspbr.sharepoint.com/:f:/s/g_caocivel/EoaU-tbGuaREpWZ82XxIB1IB0dws-vO0ziOBmi7xby8ooQ?e=H20yOE'),
+                    'http://www.mpsp.mp.br/portal/page/portal/Cartilhas/defesa_animal_2015_06_11_dg.pdf'),
               ],
             ),
             SizedBox(height: spaceIconToTitle),
