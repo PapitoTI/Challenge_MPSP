@@ -614,22 +614,7 @@ class Services extends StatelessWidget with NavigationStates {
                           ),
                         ),
                       ),
-                    ),
-                  ),
-                  //17
-                  Container(
-                    height: 200,
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(0, 68, 82, 1),
-                    ),
-                    child: Center(
-                      child: Text(
-                        "Tabelas Unificadas",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 35, color: Colors.black),
-                      ),
-                    ),
+                    ],
                   ),
                 ],
               ),
