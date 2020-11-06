@@ -51,6 +51,7 @@ flutter:
     - assets/img/cidadao_falecon/
     - assets/img/inst/
     - assets/img/promo/
+    - assets/img/home/
 
   fonts:
     - family: Montserrat

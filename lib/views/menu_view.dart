@@ -48,15 +48,17 @@ class MenuController extends StatelessWidget {
                           .add(NavigationEvents.InstitucionalClickedEvent);
                       onMenuCloseTap();
                     },
-                    child: Text(
-                      "INSTITUCIONAL",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontFamily: "Montserrat",
-                        fontWeight: bottonColor == 0
-                            ? FontWeight.w900
-                            : FontWeight.normal,
+                    child: Container(
+                      child: Text(
+                        "INSTITUCIONAL",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontFamily: "Montserrat",
+                          fontWeight: bottonColor == 0
+                              ? FontWeight.w900
+                              : FontWeight.normal,
+                        ),
                       ),
                     ),
                   ),
@@ -69,15 +71,17 @@ class MenuController extends StatelessWidget {
                           .add(NavigationEvents.AreaClickedEvent);
                       onMenuCloseTap();
                     },
-                    child: Text(
-                      "ÁREAS DE ATUAÇÃO",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontFamily: "Montserrat",
-                        fontWeight: bottonColor == 1
-                            ? FontWeight.w900
-                            : FontWeight.normal,
+                    child: Container(
+                      child: Text(
+                        "ÁREAS DE ATUAÇÃO",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontFamily: "Montserrat",
+                          fontWeight: bottonColor == 1
+                              ? FontWeight.w900
+                              : FontWeight.normal,
+                        ),
                       ),
                     ),
                   ),
@@ -90,15 +94,17 @@ class MenuController extends StatelessWidget {
                           .add(NavigationEvents.CidadaoClickedEvent);
                       onMenuCloseTap();
                     },
-                    child: Text(
-                      "CIDADÃO",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontFamily: "Montserrat",
-                        fontWeight: bottonColor == 2
-                            ? FontWeight.w900
-                            : FontWeight.normal,
+                    child: Container(
+                      child: Text(
+                        "CIDADÃO",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontFamily: "Montserrat",
+                          fontWeight: bottonColor == 2
+                              ? FontWeight.w900
+                              : FontWeight.normal,
+                        ),
                       ),
                     ),
                   ),
@@ -111,15 +117,17 @@ class MenuController extends StatelessWidget {
                           .add(NavigationEvents.ServicesClickedEvents);
                       onMenuCloseTap();
                     },
-                    child: Text(
-                      "SERVIÇOS",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24,
-                        fontFamily: "Montserrat",
-                        fontWeight: bottonColor == 3
-                            ? FontWeight.w900
-                            : FontWeight.normal,
+                    child: Container(
+                      child: Text(
+                        "SERVIÇOS",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24,
+                          fontFamily: "Montserrat",
+                          fontWeight: bottonColor == 3
+                              ? FontWeight.w900
+                              : FontWeight.normal,
+                        ),
                       ),
                     ),
                   ),

@@ -23,10 +23,10 @@ class SignUpBar extends StatelessWidget {
           Text(
             label,
             style: const TextStyle(
-              fontWeight: FontWeight.w800,
-              color: Palette.brancompsp,
-              fontSize: 24,
-            ),
+                fontWeight: FontWeight.w800,
+                color: Palette.brancompsp,
+                fontSize: 24,
+                fontFamily: "Montserrat"),
           ),
           Expanded(
             child: Center(
@@ -63,10 +63,10 @@ class SignInBar extends StatelessWidget {
           Text(
             label,
             style: const TextStyle(
-              fontWeight: FontWeight.w800,
-              color: Palette.vermelhompsp,
-              fontSize: 24,
-            ),
+                fontWeight: FontWeight.w800,
+                color: Palette.vermelhompsp,
+                fontSize: 24,
+                fontFamily: "Montserrat"),
           ),
           Expanded(
             child: Center(

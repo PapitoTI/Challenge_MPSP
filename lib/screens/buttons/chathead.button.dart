@@ -13,8 +13,6 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
   final GlobalKey _bottomKey = GlobalKey();
   bool isOpened = false;
   AnimationController _animationController;
-  Animation<Color> _buttonColor;
-  Animation<double> _animationIcon;
   Animation<double> _translateButton;
   Curve _curve = Curves.easeOut;
 
@@ -77,13 +75,6 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
           ..addListener(() {
             setState(() {});
           });
-    _animationIcon =
-        Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
-    _buttonColor =
-        ColorTween(begin: Palette.vermelhompsp, end: Palette.brancompsp)
-            .animate(CurvedAnimation(
-                parent: _animationController,
-                curve: Interval(0.00, 1.00, curve: Curves.linear)));
     _translateButton = Tween<double>(begin: 56, end: -14.0).animate(
         CurvedAnimation(
             parent: _animationController,
@@ -97,6 +88,7 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
 
   Widget buttonBusca() {
     return FloatingActionButton(
+      backgroundColor: Palette.vermelhompsp,
       heroTag: "1",
       onPressed: () {
         Navigator.push(
@@ -107,12 +99,16 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
         );
       },
       tooltip: "Busca",
-      child: Icon(Icons.search),
+      child: Icon(
+        Icons.search,
+        color: Palette.brancompsp,
+      ),
     );
   }
 
   Widget buttonStar() {
     return FloatingActionButton(
+      backgroundColor: Palette.vermelhompsp,
       heroTag: "2",
       onPressed: () {
         Navigator.push(
@@ -123,7 +119,10 @@ class _ChatHeadState extends State<ChatHead> with TickerProviderStateMixin {
         );
       },
       tooltip: "Avaliação",
-      child: Icon(Icons.star),
+      child: Icon(
+        Icons.star,
+        color: Palette.brancompsp,
+      ),
     );
   }
 

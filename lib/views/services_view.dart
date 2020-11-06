@@ -49,11 +49,15 @@ class Services extends StatelessWidget with NavigationStates {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       InkWell(
-                        child: Icon(
-                          Icons.menu,
-                          color: Palette.brancompsp,
+                        child: GestureDetector(
+                          onTap: onMenuTap,
+                          child: Container(
+                            child: Icon(
+                              Icons.menu,
+                              color: Palette.brancompsp,
+                            ),
+                          ),
                         ),
-                        onTap: onMenuTap,
                       ),
                       Text(
                         "Serviços",

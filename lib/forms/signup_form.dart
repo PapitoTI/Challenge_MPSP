@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({Key key, this.onLogInPressed}) : super(key: key);
+  static const double boxSize = 68;
 
   final VoidCallback onLogInPressed;
 
@@ -30,8 +31,7 @@ class SignUp extends StatelessWidget {
                       padding: const EdgeInsets.only(right: 135.0),
                       child: Text(
                         '\n\n\nCadastre-se',
-                        style:
-                            TextStyle(fontSize: 35, color: Palette.brancompsp),
+                        style: TextStyle(fontSize: 35, color: Colors.black),
                       ),
                     ),
                     Row(
@@ -123,22 +123,79 @@ class SignUp extends StatelessWidget {
                     }));
                   },
                 ),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: InkWell(
-                    splashColor: Palette.brancompsp,
-                    onTap: () {
-                      onLogInPressed?.call();
-                    },
-                    child: const Text(
-                      'Entrar',
-                      style: TextStyle(
-                        color: Palette.brancompsp,
-                        fontSize: 16,
-                        decoration: TextDecoration.underline,
-                      ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        InkWell(
+                          splashColor: Palette.brancompsp,
+                          onTap: () {
+                            onLogInPressed?.call();
+                          },
+                          child: const Text(
+                            'Entrar',
+                            style: TextStyle(
+                              color: Palette.brancompsp,
+                              fontSize: 16,
+                              fontFamily: "Montserrat",
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 15.0),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.5),
+                                      spreadRadius: 0.5,
+                                      blurRadius: 10,
+                                      offset: Offset(0, 5),
+                                    )
+                                  ],
+                                  image: DecorationImage(
+                                    image: AssetImage('assets/img/home/fb.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 10.0),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.5),
+                                      spreadRadius: 0.5,
+                                      blurRadius: 10,
+                                      offset: Offset(0, 5),
+                                    )
+                                  ],
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/img/home/google.png'),
+                                  )),
+                              width: boxSize,
+                              height: boxSize,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ],
             ),

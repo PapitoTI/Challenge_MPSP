@@ -8,7 +8,8 @@ InputDecoration signupInputDecoration({String hintText, String labelText}) {
     hintStyle: const TextStyle(color: Colors.white, fontSize: 18),
     hintText: hintText,
     labelText: labelText,
-    labelStyle: const TextStyle(color: Colors.white, fontSize: 18),
+    labelStyle: const TextStyle(
+        color: Colors.white, fontSize: 14, fontFamily: "Montserrat"),
     focusedBorder: const UnderlineInputBorder(
       borderSide: BorderSide(color: Colors.white, width: 2),
     ),
@@ -31,7 +32,8 @@ InputDecoration signInInputDecoration({String hintText, String labelText}) {
     hintStyle: const TextStyle(fontSize: 18),
     hintText: hintText,
     labelText: labelText,
-    labelStyle: const TextStyle(color: Colors.black, fontSize: 18),
+    labelStyle: const TextStyle(
+        color: Colors.black, fontSize: 14, fontFamily: "Montserrat"),
     focusedBorder: const UnderlineInputBorder(
       borderSide: BorderSide(color: Colors.black, width: 2),
     ),

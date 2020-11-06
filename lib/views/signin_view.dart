@@ -13,9 +13,10 @@ class _SigninViewState extends State<SigninView> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "MPSPssss",
+      title: "MPSP",
       theme: ThemeData(
         textTheme: GoogleFonts.anonymousProTextTheme(),
+        fontFamily: "Montserrat",
 
         /// escolherfont essa esta riducula
         accentColor: Palette.brancompsp,
